@@ -42,6 +42,7 @@
     [self.scrollView setContentSize:CGSizeMake(0, rect.origin.y+rect.size.height)];
     
     
+    [self socialDealsCampaign];
     
 }
 -(IBAction)btnBackClk:(id)sender
@@ -83,12 +84,7 @@
     [_socialMediaView helperBtnPressed];
     
     //possible bool function? Idk how to record between view controllers but I guess we'll figure it out
-    if ([self.socialMediaView.contextData objectForKey:@"Social Media"])
-    {
-        
-    }
-    
-    //serve content based on which button was pressed - integration with UI????
+        //serve content based on which button was pressed - integration with UI????
     
     [ADBMobile targetClearCookies];
     
@@ -97,10 +93,16 @@
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
      
      {
-     
-         if ([self.socialMediaView.contextData allKeysForObject:@"Twitter"])
+         if ([content isEqualToString:@"no-share"]||[content isEqualToString:@"Show Nothing"])
          {
-             
+             _socialShare.hidden = YES;
+         }
+         
+         else
+         {
+         
+         UIImage *btnImage = [UIImage imageNamed:content];
+        [self.socialShare setImage:btnImage forState:UIControlStateNormal];
          }
      
      }];

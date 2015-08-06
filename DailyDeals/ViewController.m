@@ -37,11 +37,11 @@
 }
 -(IBAction)btnFacebookLoginClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(IBAction)btnTwitterClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
