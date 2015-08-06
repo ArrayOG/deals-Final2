@@ -11,7 +11,10 @@
 #import "ProfileViewController.h"
 #import "DealsDetailsViewController.h"
 #import "Container.h"
+#import "ADBMobile.h"
 @interface DailyDealsViewController ()
+
+@property BOOL useWEST;
 
 @end
 
@@ -30,6 +33,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    
+    _useWEST = [ self contentCampaign];
   
     //Add side bar on view
     self.appMenu=[[AppMenuView alloc] initWithNibName:@"AppMenuView" bundle:nil];
@@ -152,6 +157,28 @@
         //DealsDetailsViewController *newSegue=segue.destinationViewController;
         //Pass any value to dailyDetails ViewController if require
     }
+}
+
+-(BOOL)contentCampaign
+{
+    __block BOOL westC = nil;
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"welcome-message" defaultContent:@"Find Great Deals Everyday!" parameters:nil];
+    
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
+     
+     {
+         if ([content isEqualToString:@"westCoast"]) {
+             westC = YES;
+         } else {
+             westC = NO;
+         }
+         
+     }];
+    
+    return westC;
+    
 }
 - (void)didReceiveMemoryWarning
 {
