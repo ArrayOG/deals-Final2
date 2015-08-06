@@ -864,14 +864,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3tY-Jr-XJk">
-                                        <rect key="frame" x="277" y="5" width="35" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Tw">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_Group_-copy-3.png" id="eNd-1R-7NF">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -880,7 +872,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NqL-sA-Rhk">
                                         <rect key="frame" x="274" y="0.0" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="TW">
+                                        <state key="normal">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -961,7 +953,6 @@
                         <outlet property="scrollView" destination="tXo-8X-LXT" id="Zm0-1M-0Jz"/>
                         <outlet property="socialShare" destination="NqL-sA-Rhk" id="ivE-Hu-WO9"/>
                         <outlet property="textView" destination="p5y-AQ-Zp3" id="K0e-Cj-u4V"/>
-                        <outlet property="twShare" destination="3tY-Jr-XJk" id="pY6-cO-Y77"/>
                         <segue destination="IGW-5H-bBm" kind="push" identifier="detailsToMyPurchaseView" id="fcX-Zd-IxC"/>
                     </connections>
                 </viewController>

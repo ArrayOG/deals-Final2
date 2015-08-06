@@ -17,5 +17,4 @@
 -(IBAction)btnBuyClk:(id)sender;
 -(void)socialDealsCampaign; 
 
-
 @end
