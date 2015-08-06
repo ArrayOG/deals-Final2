@@ -7,13 +7,9 @@
 //
 
 #import "AppDelegate.h"
-<<<<<<< HEAD
-#import "ViewController.h"
-=======
 #import "ADBMobile.h"
 #import "ViewController.h"
 
->>>>>>> origin/master
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
