@@ -18,17 +18,29 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+<<<<<<< HEAD
+     [self welcomeMessageCampaign];
+	// Do any additional setup after loading the view, typically from a nib.
+=======
     
     // Do any additional setup after loading the view, typically from a nib.
+>>>>>>> origin/master
     //Hide navigation bar and set scrollview contentSize
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     self.scrollView.contentSize=CGSizeMake(320, 560);
     
+<<<<<<< HEAD
+        
+   
+  
+=======
     [self socialMediaCampaign];
     [self welcomeMessageCampaign];
     [self helperBtnPressed];
     
+>>>>>>> origin/master
 }
 #pragma mark Button Action
 -(IBAction)btnLoginClk:(id)sender
@@ -37,11 +49,11 @@
 }
 -(IBAction)btnFacebookLoginClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(IBAction)btnTwitterClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
