@@ -449,7 +449,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_Group_-copy-3.png" id="bUC-sp-jDZ">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halfmoonbay.jpeg" id="bUC-sp-jDZ">
                                                             <rect key="frame" x="10" y="0.0" width="300" height="179"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -1019,6 +1019,7 @@
         <image name="couponBackground.png" width="320" height="568"/>
         <image name="cross.png" width="16" height="16"/>
         <image name="detailWithLine.png" width="300" height="88"/>
+        <image name="halfmoonbay.jpeg" width="1000" height="751"/>
         <image name="hamburger.png" width="20" height="15"/>
         <image name="off.png" width="50" height="31"/>
         <image name="on.png" width="50" height="31"/>

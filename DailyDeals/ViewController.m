@@ -18,14 +18,16 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+     [self welcomeMessageCampaign];
 	// Do any additional setup after loading the view, typically from a nib.
     //Hide navigation bar and set scrollview contentSize
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     self.scrollView.contentSize=CGSizeMake(320, 560);
     
         
-    [self welcomeMessageCampaign];
+   
   
 }
 #pragma mark Button Action

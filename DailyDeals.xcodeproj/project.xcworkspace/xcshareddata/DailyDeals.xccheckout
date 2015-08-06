@@ -14,6 +14,8 @@
 		<string>https://github.com/malna1r/deals-ios4.git</string>
 		<key>66EF5FB31D57405D2F32803E3546B981798C01FE</key>
 		<string>https://github.com/malna1r/deals-Final.git</string>
+		<key>94F32C87426D6661FAA3FD6271526B39EA5E99D9</key>
+		<string>https://github.com/ArrayOG/deals-Final2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DailyDeals.xcodeproj</string>
@@ -22,14 +24,16 @@
 		<key>135CF338A59544CCCB1EF74891DCD6BD66FAEEF5</key>
 		<string>../../../deals-ios5</string>
 		<key>66EF5FB31D57405D2F32803E3546B981798C01FE</key>
+		<string>../../../deals-Final</string>
+		<key>94F32C87426D6661FAA3FD6271526B39EA5E99D9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/malna1r/deals-Final.git</string>
+	<string>https://github.com/ArrayOG/deals-Final2.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>66EF5FB31D57405D2F32803E3546B981798C01FE</string>
+	<string>94F32C87426D6661FAA3FD6271526B39EA5E99D9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -39,6 +43,14 @@
 			<string>66EF5FB31D57405D2F32803E3546B981798C01FE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>deals-Final</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94F32C87426D6661FAA3FD6271526B39EA5E99D9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>deals-Final2</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
