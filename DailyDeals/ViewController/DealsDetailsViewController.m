@@ -8,14 +8,9 @@
 
 #import "DealsDetailsViewController.h"
 #import "MyPurchaseViewController.h"
-#import "ADBMobile.h"
-#import "ViewController.h"
-
 @interface DealsDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
-@property (nonatomic, strong) IBOutlet UIButton *socialShare;
-@property (strong, nonatomic) ViewController *socialMediaView;
 
 @end
 
@@ -24,8 +19,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
-    {
+    if (self) {
+        // Custom initialization
     }
     return self;
 }
@@ -41,8 +36,6 @@
     
     [self.scrollView setContentSize:CGSizeMake(0, rect.origin.y+rect.size.height)];
     
-    
-    [self socialDealsCampaign];
     
 }
 -(IBAction)btnBackClk:(id)sender
@@ -60,7 +53,7 @@
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString: @"detailsToMyPurchaseView"]) {
+    if ([segue.identifier isEqualToString:@"detailsToMyPurchaseView"]) {
         
        // MyPurchaseViewController *newSegue=segue.destinationViewController;
         //Pass any value to dailyDetails ViewController if require
@@ -76,36 +69,4 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
-
--(void)socialDealsCampaign
-{
-   //Need to check if fb or twitter buttons were pressed
-    
-    [_socialMediaView helperBtnPressed];
-    
-    //possible bool function? Idk how to record between view controllers but I guess we'll figure it out
-        //serve content based on which button was pressed - integration with UI????
-    
-    [ADBMobile targetClearCookies];
-    
-    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"deals-details" defaultContent:@"Show Nothing" parameters:self.socialMediaView.contextData];
-    
-    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
-     
-     {
-         if ([content isEqualToString:@"no-share"]||[content isEqualToString:@"Show Nothing"])
-         {
-             _socialShare.hidden = YES;
-         }
-         
-         else
-         {
-         
-         UIImage *btnImage = [UIImage imageNamed:content];
-        [self.socialShare setImage:btnImage forState:UIControlStateNormal];
-         }
-     
-     }];
-}
-
 @end

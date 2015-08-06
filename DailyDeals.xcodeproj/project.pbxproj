@@ -113,7 +113,6 @@
 		8EEF9FCD18F42AD00022E7BB /* AppMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCA18F42AD00022E7BB /* AppMenuCell.xib */; };
 		8EEF9FCE18F42AD00022E7BB /* AppMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCB18F42AD00022E7BB /* AppMenuCell.m */; };
 		8EEF9FD218F433360022E7BB /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FD118F433360022E7BB /* Container.m */; };
-<<<<<<< HEAD
 		A01689571B73DC4600E322CA /* floridakeys.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689561B73DC4500E322CA /* floridakeys.png */; };
 		A016895B1B73E19D00E322CA /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A016895A1B73E19D00E322CA /* halfmoonbay.jpeg */; };
 		A016895D1B73E1BB00E322CA /* LobsterDinner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016895C1B73E1BB00E322CA /* LobsterDinner.jpg */; };
@@ -124,11 +123,6 @@
 		A01689691B73EA8100E322CA /* lasvegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689681B73EA8100E322CA /* lasvegas.jpg */; };
 		A016896B1B73ED8B00E322CA /* scuba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016896A1B73ED8B00E322CA /* scuba.jpg */; };
 		A016896D1B73EFF100E322CA /* niagrafalls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016896C1B73EFF100E322CA /* niagrafalls.jpg */; };
-=======
-		906487B21B72AA7900545A50 /* facebook31.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487B11B72AA7900545A50 /* facebook31.png */; };
-		906487B41B72AA8200545A50 /* tumblr12.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487B31B72AA8200545A50 /* tumblr12.png */; };
-		906487B61B72AA8A00545A50 /* twitter20.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487B51B72AA8A00545A50 /* twitter20.png */; };
->>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +259,6 @@
 		8EEF9FCC18F42AD00022E7BB /* AppMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMenuCell.h; sourceTree = "<group>"; };
 		8EEF9FD018F433360022E7BB /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		8EEF9FD118F433360022E7BB /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		A01689561B73DC4500E322CA /* floridakeys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floridakeys.png; sourceTree = "<group>"; };
 		A016895A1B73E19D00E322CA /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = halfmoonbay.jpeg; sourceTree = "<group>"; };
 		A016895C1B73E1BB00E322CA /* LobsterDinner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LobsterDinner.jpg; sourceTree = "<group>"; };
@@ -276,11 +269,6 @@
 		A01689681B73EA8100E322CA /* lasvegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lasvegas.jpg; sourceTree = "<group>"; };
 		A016896A1B73ED8B00E322CA /* scuba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scuba.jpg; sourceTree = "<group>"; };
 		A016896C1B73EFF100E322CA /* niagrafalls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = niagrafalls.jpg; sourceTree = "<group>"; };
-=======
-		906487B11B72AA7900545A50 /* facebook31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook31.png; sourceTree = "<group>"; };
-		906487B31B72AA8200545A50 /* tumblr12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tumblr12.png; sourceTree = "<group>"; };
-		906487B51B72AA8A00545A50 /* twitter20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter20.png; sourceTree = "<group>"; };
->>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,9 +498,6 @@
 		8EEF9F7F18F3F6610022E7BB /* PurchaseDetails */ = {
 			isa = PBXGroup;
 			children = (
-				906487B51B72AA8A00545A50 /* twitter20.png */,
-				906487B31B72AA8200545A50 /* tumblr12.png */,
-				906487B11B72AA7900545A50 /* facebook31.png */,
 				8EEF9F8018F3F6610022E7BB /* backArrow.png */,
 				8EEF9F8118F3F6610022E7BB /* backArrow@2x.png */,
 				8EEF9F8218F3F6610022E7BB /* btnBuy.png */,
@@ -685,7 +670,6 @@
 				A016895D1B73E1BB00E322CA /* LobsterDinner.jpg in Resources */,
 				8EEF9F8F18F3F6610022E7BB /* buttomBuyStrip@2x.png in Resources */,
 				8EC0359D18F2B93100946BA8 /* Icon-Facebook.png in Resources */,
-				906487B21B72AA7900545A50 /* facebook31.png in Resources */,
 				8EC0356318F2872200946BA8 /* InfoPlist.strings in Resources */,
 				8EC035AF18F2CCD700946BA8 /* navBar@2x.png in Resources */,
 				8EC0356C18F2872200946BA8 /* Main.storyboard in Resources */,
@@ -731,10 +715,8 @@
 				8EC035C218F2D7EE00946BA8 /* profileSubView.png in Resources */,
 				8EEF9F9218F3F6610022E7BB /* Time-Icon.png in Resources */,
 				8EC035BB18F2CF2D00946BA8 /* Search-Icon.png in Resources */,
-				906487B61B72AA8A00545A50 /* twitter20.png in Resources */,
 				8EEF9F9018F3F6610022E7BB /* purchaseDetails.png in Resources */,
 				8EC035C318F2D7EE00946BA8 /* profileSubView@2x.png in Resources */,
-				906487B41B72AA8200545A50 /* tumblr12.png in Resources */,
 				8E3B304118F3C62100DEC655 /* btnSignOut@2x.png in Resources */,
 				84E0E9AC1921180E001B388B /* Logo.png in Resources */,
 				8EEF9FB318F417CB0022E7BB /* couponBackground@2x.png in Resources */,
