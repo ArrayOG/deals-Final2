@@ -21,8 +21,11 @@
 @property(nonatomic,strong)IBOutlet UITextField *txtFieldEmail;
 @property(nonatomic,strong)IBOutlet UITextField *txtFieldPassword;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeMessage;
+@property (nonatomic, strong) NSMutableDictionary *contextData;
 
 -(void)welcomeMessageCampaign;
+-(void)socialMediaCampaign;
+-(void)helperBtnPressed;
 
 -(IBAction)btnLoginClk:(id)sender;
 -(IBAction)btnFacebookLoginClk:(id)sender;
