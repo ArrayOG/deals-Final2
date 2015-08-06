@@ -24,5 +24,6 @@
 -(IBAction)btnProfileClk:(id)sender;
 -(IBAction)btnSlideManuClk:(id)sender;
 -(IBAction)btnSearchClk:(id)sender;
+-(BOOL) contentCampaign;
 
 @end

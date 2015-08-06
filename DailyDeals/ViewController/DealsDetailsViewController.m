@@ -59,7 +59,7 @@
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"detailsToMyPurchaseView"]) {
+    if ([segue.identifier isEqualToString: @"detailsToMyPurchaseView"]) {
         
        // MyPurchaseViewController *newSegue=segue.destinationViewController;
         //Pass any value to dailyDetails ViewController if require

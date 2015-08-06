@@ -26,6 +26,7 @@
 -(void)welcomeMessageCampaign;
 -(void)socialMediaCampaign;
 -(void)helperBtnPressed;
+
 -(IBAction)btnLoginClk:(id)sender;
 -(IBAction)btnFacebookLoginClk:(id)sender;
 -(IBAction)btnTwitterClk:(id)sender;
