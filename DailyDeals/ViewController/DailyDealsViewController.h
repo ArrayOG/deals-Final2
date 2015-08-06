@@ -21,7 +21,6 @@
 @property(nonatomic,strong)IBOutlet UIView *viewContainer;
 @property (nonatomic, strong) AppDelegate *appDelegate;
 @property (nonatomic, strong) AppMenuView *appMenu;
-
 -(IBAction)btnProfileClk:(id)sender;
 -(IBAction)btnSlideManuClk:(id)sender;
 -(IBAction)btnSearchClk:(id)sender;
