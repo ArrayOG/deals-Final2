@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ADBMobile.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +17,7 @@
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
+    
     return YES;
 }
 							

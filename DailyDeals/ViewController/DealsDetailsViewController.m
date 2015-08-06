@@ -8,9 +8,14 @@
 
 #import "DealsDetailsViewController.h"
 #import "MyPurchaseViewController.h"
+#import "ADBMobile.h"
+#import "ViewController.h"
+
 @interface DealsDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, strong) IBOutlet UIButton *socialShare;
+@property (strong, nonatomic) ViewController *socialMediaView;
 
 @end
 
@@ -19,8 +24,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+    {
     }
     return self;
 }
@@ -35,6 +40,7 @@
     self.textView.frame=rect;
     
     [self.scrollView setContentSize:CGSizeMake(0, rect.origin.y+rect.size.height)];
+    
     
     
 }
@@ -69,4 +75,35 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
+-(void)socialDealsCampaign
+{
+   //Need to check if fb or twitter buttons were pressed
+    
+    [_socialMediaView helperBtnPressed];
+    
+    //possible bool function? Idk how to record between view controllers but I guess we'll figure it out
+    if ([self.socialMediaView.contextData objectForKey:@"Social Media"])
+    {
+        
+    }
+    
+    //serve content based on which button was pressed - integration with UI????
+    
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"deals-details" defaultContent:@"Show Nothing" parameters:self.socialMediaView.contextData];
+    
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
+     
+     {
+     
+         if ([self.socialMediaView.contextData allKeysForObject:@"Twitter"])
+         {
+             
+         }
+     
+     }];
+}
+
 @end

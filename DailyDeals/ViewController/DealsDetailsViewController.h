@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "CouponViewController.h"
+#import "ViewController.h"
+
 @interface DealsDetailsViewController : UIViewController
 @property(nonatomic,strong)CouponViewController *controller;
+
 -(IBAction)btnBackClk:(id)sender;
 -(IBAction)btnBuyClk:(id)sender;
+-(void)socialDealsCampaign; 
+
+
 @end
