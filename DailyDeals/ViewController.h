@@ -22,7 +22,7 @@
 @property(nonatomic,strong)IBOutlet UITextField *txtFieldPassword;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeMessage;
 
-
+-(void)welcomeMessageCampaign;
 -(IBAction)btnLoginClk:(id)sender;
 -(IBAction)btnFacebookLoginClk:(id)sender;
 -(IBAction)btnTwitterClk:(id)sender;

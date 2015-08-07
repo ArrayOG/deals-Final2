@@ -24,7 +24,7 @@
 @property(nonatomic,strong) IBOutlet NSMutableArray *west;
 @property(nonatomic,strong) IBOutlet NSMutableArray *east;
 @property(nonatomic,strong) IBOutlet NSMutableArray *inApp;
--(void)welcomeMessageCampaign;
+-(BOOL)contentCampaign;
 
 -(IBAction)btnProfileClk:(id)sender;
 -(IBAction)btnSlideManuClk:(id)sender;
