@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "DailyDealsViewController.h"
+#import "DealsDetailsViewController.h"
 #import "ADBMobile.h"
 
 @interface ViewController ()
@@ -26,7 +26,8 @@
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     self.scrollView.contentSize=CGSizeMake(320, 560);
     
-        
+    [self socialLoginCampaign];
+    
    
   
 }
@@ -37,11 +38,11 @@
 }
 -(IBAction)btnFacebookLoginClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(IBAction)btnTwitterClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -122,5 +123,54 @@
      }];
     
 }
+
+-(NSMutableDictionary*)helperBtnPressed
+{
+    //Declare variable that serves as a dictionary of parameters to be passed into a create request function
+    NSMutableDictionary* contextData = [NSMutableDictionary dictionary];
+    
+    //Store information about how to further experience target based on which button was pressed, if any
+    if (_btnTwitter.isSelected) {
+        [contextData setObject:@"Twitter" forKey:@"Social Media"];
+    }
+    
+    else if (_btnFacebook.isSelected)
+    {
+        [contextData setObject:@"Facebook" forKey:@"Social Media"];
+    }
+    
+    return contextData;
+    
+}
+
+
+-(void)socialLoginCampaign
+{
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"social-signup" defaultContent:@"Default Message" parameters:nil];
+    
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
+     
+     {
+         if ([content isEqualToString:@"fb"])
+         {
+             _btnTwitter.hidden = YES;
+         }
+         else if ([content isEqualToString:@"tw"])
+         {
+             _btnFacebook.hidden = YES;
+         }
+         else if ([content isEqualToString:@"no-social"])
+         {
+             _btnFacebook.hidden = YES;
+             _btnTwitter.hidden = YES;
+         }
+         
+     }];
+    
+    
+}
+
 
 @end

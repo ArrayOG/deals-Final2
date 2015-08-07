@@ -10,6 +10,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ADBMobile.h"
+#import "DealsDetailsViewController.h"
 
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
@@ -23,6 +24,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *welcomeMessage;
 
 -(void)welcomeMessageCampaign;
+-(void)socialLoginCampaign;
 
 -(IBAction)btnLoginClk:(id)sender;
 -(IBAction)btnFacebookLoginClk:(id)sender;

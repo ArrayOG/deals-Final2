@@ -113,10 +113,16 @@
 		8EEF9FCD18F42AD00022E7BB /* AppMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCA18F42AD00022E7BB /* AppMenuCell.xib */; };
 		8EEF9FCE18F42AD00022E7BB /* AppMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCB18F42AD00022E7BB /* AppMenuCell.m */; };
 		8EEF9FD218F433360022E7BB /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FD118F433360022E7BB /* Container.m */; };
+<<<<<<< HEAD
+		906487BE1B7407A100545A50 /* png in Resources */ = {isa = PBXBuildFile; fileRef = 906487BD1B7407A100545A50 /* png */; };
+		906487C01B7407A800545A50 /* facebook31.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487BF1B7407A800545A50 /* facebook31.png */; };
+		906487C21B7407AD00545A50 /* twitter20.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487C11B7407AD00545A50 /* twitter20.png */; };
 		A01689721B73F5C400E322CA /* broadway.png in Resources */ = {isa = PBXBuildFile; fileRef = A016896E1B73F5C400E322CA /* broadway.png */; };
 		A01689731B73F5C400E322CA /* coachella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016896F1B73F5C400E322CA /* coachella.jpg */; };
 		A01689741B73F5C400E322CA /* floridakeys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689701B73F5C400E322CA /* floridakeys.jpg */; };
 		A01689751B73F5C400E322CA /* halfmoonbay.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689711B73F5C400E322CA /* halfmoonbay.png */; };
+=======
+>>>>>>> origin/master
 		A01689771B73F5D700E322CA /* floridakeys.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689761B73F5D700E322CA /* floridakeys.png */; };
 		A01689791B73F5F000E322CA /* seattle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689781B73F5F000E322CA /* seattle.jpg */; };
 		A016897B1B73F62000E322CA /* LobsterDinner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016897A1B73F62000E322CA /* LobsterDinner.jpg */; };
@@ -124,6 +130,9 @@
 		A016897F1B73F67B00E322CA /* museumtour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016897E1B73F67B00E322CA /* museumtour.jpg */; };
 		A01689811B73F69000E322CA /* lasvegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689801B73F69000E322CA /* lasvegas.jpg */; };
 		A01689831B73F6A400E322CA /* niagrafalls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689821B73F6A400E322CA /* niagrafalls.jpg */; };
+		A01689851B73F8B300E322CA /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A01689841B73F8B300E322CA /* halfmoonbay.jpeg */; };
+		A01689871B73F8BE00E322CA /* broadway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689861B73F8BE00E322CA /* broadway.jpg */; };
+		A01689891B73F8C700E322CA /* coachella.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689881B73F8C700E322CA /* coachella.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,10 +269,16 @@
 		8EEF9FCC18F42AD00022E7BB /* AppMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMenuCell.h; sourceTree = "<group>"; };
 		8EEF9FD018F433360022E7BB /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		8EEF9FD118F433360022E7BB /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		906487BD1B7407A100545A50 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
+		906487BF1B7407A800545A50 /* facebook31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook31.png; path = png/facebook31.png; sourceTree = "<group>"; };
+		906487C11B7407AD00545A50 /* twitter20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter20.png; path = png/twitter20.png; sourceTree = "<group>"; };
 		A016896E1B73F5C400E322CA /* broadway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broadway.png; sourceTree = "<group>"; };
 		A016896F1B73F5C400E322CA /* coachella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coachella.jpg; sourceTree = "<group>"; };
 		A01689701B73F5C400E322CA /* floridakeys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floridakeys.jpg; sourceTree = "<group>"; };
 		A01689711B73F5C400E322CA /* halfmoonbay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfmoonbay.png; sourceTree = "<group>"; };
+=======
+>>>>>>> origin/master
 		A01689761B73F5D700E322CA /* floridakeys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floridakeys.png; path = DealsImages/floridakeys.png; sourceTree = "<group>"; };
 		A01689781B73F5F000E322CA /* seattle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = seattle.jpg; path = DealsImages/seattle.jpg; sourceTree = "<group>"; };
 		A016897A1B73F62000E322CA /* LobsterDinner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LobsterDinner.jpg; path = DealsImages/LobsterDinner.jpg; sourceTree = "<group>"; };
@@ -271,6 +286,9 @@
 		A016897E1B73F67B00E322CA /* museumtour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = museumtour.jpg; path = DealsImages/museumtour.jpg; sourceTree = "<group>"; };
 		A01689801B73F69000E322CA /* lasvegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lasvegas.jpg; path = DealsImages/lasvegas.jpg; sourceTree = "<group>"; };
 		A01689821B73F6A400E322CA /* niagrafalls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = niagrafalls.jpg; path = DealsImages/niagrafalls.jpg; sourceTree = "<group>"; };
+		A01689841B73F8B300E322CA /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = DealsImages/halfmoonbay.jpeg; sourceTree = "<group>"; };
+		A01689861B73F8BE00E322CA /* broadway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broadway.jpg; path = DealsImages/broadway.jpg; sourceTree = "<group>"; };
+		A01689881B73F8C700E322CA /* coachella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coachella.png; path = DealsImages/coachella.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +435,9 @@
 		8EC0358D18F2B2A800946BA8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				906487BF1B7407A800545A50 /* facebook31.png */,
+				906487C11B7407AD00545A50 /* twitter20.png */,
+				906487BD1B7407A100545A50 /* png */,
 				A01689821B73F6A400E322CA /* niagrafalls.jpg */,
 				A01689801B73F69000E322CA /* lasvegas.jpg */,
 				A016897E1B73F67B00E322CA /* museumtour.jpg */,
@@ -424,10 +445,9 @@
 				A016897A1B73F62000E322CA /* LobsterDinner.jpg */,
 				A01689781B73F5F000E322CA /* seattle.jpg */,
 				A01689761B73F5D700E322CA /* floridakeys.png */,
-				A016896E1B73F5C400E322CA /* broadway.png */,
-				A016896F1B73F5C400E322CA /* coachella.jpg */,
-				A01689701B73F5C400E322CA /* floridakeys.jpg */,
-				A01689711B73F5C400E322CA /* halfmoonbay.png */,
+				A01689841B73F8B300E322CA /* halfmoonbay.jpeg */,
+				A01689861B73F8BE00E322CA /* broadway.jpg */,
+				A01689881B73F8C700E322CA /* coachella.png */,
 				8EEF9FA918F417CB0022E7BB /* coupon */,
 				8EEF9F9A18F4025F0022E7BB /* myPurchase */,
 				8EEF9F7F18F3F6610022E7BB /* PurchaseDetails */,
@@ -482,12 +502,12 @@
 			children = (
 				8EC035CB18F2DE8300946BA8 /* DailyDealsViewController.h */,
 				8EC035CC18F2DE8300946BA8 /* DailyDealsViewController.m */,
-				8EC0356D18F2872200946BA8 /* ViewController.h */,
-				8EC0356E18F2872200946BA8 /* ViewController.m */,
 				8E3B304C18F3CB1400DEC655 /* ProfileViewController.h */,
 				8E3B304D18F3CB1400DEC655 /* ProfileViewController.m */,
 				8E3B304F18F3CC6700DEC655 /* DealsDetailsViewController.h */,
 				8E3B305018F3CC6700DEC655 /* DealsDetailsViewController.m */,
+				8EC0356D18F2872200946BA8 /* ViewController.h */,
+				8EC0356E18F2872200946BA8 /* ViewController.m */,
 				8EEF9F9418F3FF410022E7BB /* RegistrationViewController.h */,
 				8EEF9F9518F3FF410022E7BB /* RegistrationViewController.m */,
 				8EEF9F9718F400760022E7BB /* MyPurchaseViewController.h */,
@@ -662,25 +682,26 @@
 				8EEF9FB518F417CB0022E7BB /* square@2x.png in Resources */,
 				8EC035BE18F2CF2D00946BA8 /* hamburger@2x.png in Resources */,
 				8EC0359C18F2B93100946BA8 /* Button-Register.png in Resources */,
-				A01689731B73F5C400E322CA /* coachella.jpg in Resources */,
 				8EEF9FB118F417CB0022E7BB /* barCode@2x.png in Resources */,
 				8E3B304A18F3C67300DEC655 /* EditView.png in Resources */,
 				8E3B303B18F3C62100DEC655 /* boxWithGray@2x.png in Resources */,
 				8EC035A218F2B93100946BA8 /* Button-Log-in@2x.png in Resources */,
+				906487C01B7407A800545A50 /* facebook31.png in Resources */,
 				A01689831B73F6A400E322CA /* niagrafalls.jpg in Resources */,
 				8E3B304018F3C62100DEC655 /* btnSignOut.png in Resources */,
 				8EEF9F8F18F3F6610022E7BB /* buttomBuyStrip@2x.png in Resources */,
-				A01689741B73F5C400E322CA /* floridakeys.jpg in Resources */,
 				8EC0359D18F2B93100946BA8 /* Icon-Facebook.png in Resources */,
 				8EC0356318F2872200946BA8 /* InfoPlist.strings in Resources */,
 				8EC035AF18F2CCD700946BA8 /* navBar@2x.png in Resources */,
 				8EC0356C18F2872200946BA8 /* Main.storyboard in Resources */,
+				906487BE1B7407A100545A50 /* png in Resources */,
 				8EC0359B18F2B93100946BA8 /* Button-Log-in.png in Resources */,
 				8EEF9FA118F4025F0022E7BB /* purchaseButtom.png in Resources */,
 				8EC035AE18F2CCD700946BA8 /* navBar.png in Resources */,
+				A01689891B73F8C700E322CA /* coachella.png in Resources */,
 				A016897B1B73F62000E322CA /* LobsterDinner.jpg in Resources */,
 				8E3B303A18F3C62100DEC655 /* boxWithGray.png in Resources */,
-				A01689721B73F5C400E322CA /* broadway.png in Resources */,
+				A01689871B73F8BE00E322CA /* broadway.jpg in Resources */,
 				8EEF9F9118F3F6610022E7BB /* purchaseDetails@2x.png in Resources */,
 				8EC035C518F2DA1500946BA8 /* _Group_-copy-3@2x.png in Resources */,
 				8EEF9FB818F41B2F0022E7BB /* shadow.png in Resources */,
@@ -688,7 +709,6 @@
 				8EC035A918F2C33300946BA8 /* Icon-Password@2x.png in Resources */,
 				8EEF9F8A18F3F6610022E7BB /* backArrow.png in Resources */,
 				8EC035A118F2B93100946BA8 /* Icon-Twitter@2x.png in Resources */,
-				A01689751B73F5C400E322CA /* halfmoonbay.png in Resources */,
 				8E3B304718F3C62100DEC655 /* on@2x.png in Resources */,
 				8EEF9FA218F4025F0022E7BB /* purchaseButtom@2x.png in Resources */,
 				A01689791B73F5F000E322CA /* seattle.jpg in Resources */,
@@ -708,6 +728,7 @@
 				8EEF9FB918F41B2F0022E7BB /* shadow@2x.png in Resources */,
 				8EEF9FB418F417CB0022E7BB /* square.png in Resources */,
 				8E3B304518F3C62100DEC655 /* off@2x.png in Resources */,
+				A01689851B73F8B300E322CA /* halfmoonbay.jpeg in Resources */,
 				8EC035B918F2CF2D00946BA8 /* detailWithLine.png in Resources */,
 				8EEF9FBD18F41CE60022E7BB /* squarewithwhitebg@2x.png in Resources */,
 				8EEF9F8C18F3F6610022E7BB /* btnBuy.png in Resources */,
@@ -719,6 +740,7 @@
 				A016897D1B73F64000E322CA /* scuba.jpg in Resources */,
 				8EEF9F9218F3F6610022E7BB /* Time-Icon.png in Resources */,
 				8EC035BB18F2CF2D00946BA8 /* Search-Icon.png in Resources */,
+				906487C21B7407AD00545A50 /* twitter20.png in Resources */,
 				8EEF9F9018F3F6610022E7BB /* purchaseDetails.png in Resources */,
 				8EC035C318F2D7EE00946BA8 /* profileSubView@2x.png in Resources */,
 				8E3B304118F3C62100DEC655 /* btnSignOut@2x.png in Resources */,
