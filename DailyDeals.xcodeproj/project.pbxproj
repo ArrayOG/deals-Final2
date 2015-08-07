@@ -114,6 +114,7 @@
 		8EEF9FCE18F42AD00022E7BB /* AppMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCB18F42AD00022E7BB /* AppMenuCell.m */; };
 		8EEF9FD218F433360022E7BB /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FD118F433360022E7BB /* Container.m */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		906487BE1B7407A100545A50 /* png in Resources */ = {isa = PBXBuildFile; fileRef = 906487BD1B7407A100545A50 /* png */; };
 		906487C01B7407A800545A50 /* facebook31.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487BF1B7407A800545A50 /* facebook31.png */; };
 		906487C21B7407AD00545A50 /* twitter20.png in Resources */ = {isa = PBXBuildFile; fileRef = 906487C11B7407AD00545A50 /* twitter20.png */; };
@@ -121,6 +122,8 @@
 		A01689731B73F5C400E322CA /* coachella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016896F1B73F5C400E322CA /* coachella.jpg */; };
 		A01689741B73F5C400E322CA /* floridakeys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689701B73F5C400E322CA /* floridakeys.jpg */; };
 		A01689751B73F5C400E322CA /* halfmoonbay.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689711B73F5C400E322CA /* halfmoonbay.png */; };
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 		A01689771B73F5D700E322CA /* floridakeys.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689761B73F5D700E322CA /* floridakeys.png */; };
@@ -270,6 +273,7 @@
 		8EEF9FD018F433360022E7BB /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		8EEF9FD118F433360022E7BB /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		906487BD1B7407A100545A50 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
 		906487BF1B7407A800545A50 /* facebook31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook31.png; path = png/facebook31.png; sourceTree = "<group>"; };
 		906487C11B7407AD00545A50 /* twitter20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter20.png; path = png/twitter20.png; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 		A016896F1B73F5C400E322CA /* coachella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coachella.jpg; sourceTree = "<group>"; };
 		A01689701B73F5C400E322CA /* floridakeys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floridakeys.jpg; sourceTree = "<group>"; };
 		A01689711B73F5C400E322CA /* halfmoonbay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfmoonbay.png; sourceTree = "<group>"; };
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 		A01689761B73F5D700E322CA /* floridakeys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floridakeys.png; path = DealsImages/floridakeys.png; sourceTree = "<group>"; };
