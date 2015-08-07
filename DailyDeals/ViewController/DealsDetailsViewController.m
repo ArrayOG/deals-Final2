@@ -8,24 +8,19 @@
 
 #import "DealsDetailsViewController.h"
 #import "MyPurchaseViewController.h"
-#import "ADBMobile.h"
-#import "ViewController.h"
 @interface DealsDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
-
 
 @end
 
 @implementation DealsDetailsViewController
 
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
-    {
-        
+    if (self) {
+        // Custom initialization
     }
     return self;
 }
@@ -40,17 +35,6 @@
     self.textView.frame=rect;
     
     [self.scrollView setContentSize:CGSizeMake(0, rect.origin.y+rect.size.height)];
-    
-    UIImage *btnImage = [UIImage imageNamed:@"facebook31.png"];
-    [self.fbShare setBackgroundImage:btnImage forState:UIControlStateNormal];
-    
-    UIImage *btnImage2 = [UIImage imageNamed:@"twitter20.png"];
-    [self.twShare setBackgroundImage:btnImage2 forState:(UIControlStateNormal)];
-    
-    _twShare.hidden = YES;
-    _fbShare.hidden = YES;
-    
-    [self socialShareCampaign];
     
     
 }
@@ -85,46 +69,4 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
-
--(void)socialShareCampaign
-{
-    [ADBMobile targetClearCookies];
-    
-    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"deals-details" defaultContent:@"Show Nothing" parameters:nil];
-    
-        [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
-     
-     {
-         if ([content isEqualToString:@"no-share"]||[content isEqualToString:@"Show Nothing"])
-         {
-             _twShare.hidden = YES;
-             
-         }
-         
-         else if ([content isEqualToString:@"tw"])
-         {
-         
-             _twShare.hidden = NO;
-             
-         }
-         
-         else if ([content isEqualToString:@"fb"]){
-             _fbShare.hidden = NO;
-         }
-     
-     }];
-    
-    //Make Mbox Confirm
-    
-    [ADBMobile targetClearCookies];
-    ADBTargetLocationRequest *orderConfirm = [ADBMobile targetCreateOrderConfirmRequestWithName:@"clicked-purchase"
-orderId:@"order"
-orderTotal:@"74.99"
-productPurchasedId:nil
-parameters:nil];
-    
-    [ADBMobile targetLoadRequest:orderConfirm callback:nil];
-
-}
-
 @end

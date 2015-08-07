@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fhf-Zy-iig">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fhf-Zy-iig">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -383,9 +383,6 @@
                                                 <state key="normal" image="Search-Icon.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="btnSearchClk:" destination="g97-Cb-tgr" eventType="touchUpInside" id="unL-SZ-4dA"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Deals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XC2-b9-cbV">
                                                 <rect key="frame" x="104" y="39" width="112" height="21"/>
@@ -452,7 +449,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halfmoonbay.png" id="bUC-sp-jDZ">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halfmoonbay.jpeg" id="bUC-sp-jDZ">
                                                             <rect key="frame" x="10" y="0.0" width="300" height="179"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -872,27 +869,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cHl-Ka-Bce">
-                                        <rect key="frame" x="275" y="0.0" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BTU-Zq-dcO">
-                                        <rect key="frame" x="275" y="0.0" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gg3-BW-phm">
-                                        <rect key="frame" x="229" y="0.0" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                             </scrollView>
                             <view contentMode="scaleToFill" id="eBO-I3-PVm">
@@ -966,10 +942,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="7fa-AY-Mwk"/>
                     <connections>
-                        <outlet property="fbShare" destination="gg3-BW-phm" id="NU9-a1-Mf0"/>
                         <outlet property="scrollView" destination="tXo-8X-LXT" id="Zm0-1M-0Jz"/>
                         <outlet property="textView" destination="p5y-AQ-Zp3" id="K0e-Cj-u4V"/>
-                        <outlet property="twShare" destination="BTU-Zq-dcO" id="KMq-d6-As3"/>
                         <segue destination="IGW-5H-bBm" kind="push" identifier="detailsToMyPurchaseView" id="fcX-Zd-IxC"/>
                     </connections>
                 </viewController>
@@ -1045,7 +1019,7 @@
         <image name="couponBackground.png" width="320" height="568"/>
         <image name="cross.png" width="16" height="16"/>
         <image name="detailWithLine.png" width="300" height="88"/>
-        <image name="halfmoonbay.png" width="300" height="179"/>
+        <image name="halfmoonbay.jpeg" width="1000" height="751"/>
         <image name="hamburger.png" width="20" height="15"/>
         <image name="off.png" width="50" height="31"/>
         <image name="on.png" width="50" height="31"/>
