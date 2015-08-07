@@ -24,6 +24,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        self.east = [[NSMutableArray alloc] init];
+        self.west =[[NSMutableArray alloc] init];
+        self.inApp = [[NSMutableArray alloc] init];
         // Custom initialization
     }
     return self;
@@ -33,8 +36,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    self.west = [arrayWithObject:<#(id)#>]
     
-    _useWEST = [ self contentCampaign];
+    self.useWEST = [ self contentCampaign];
+    if (self.useWEST) {
+        self.inApp = self.west;
+    } else {
+        self.inApp = self.east;
+    }
   
     //Add side bar on view
     self.appMenu=[[AppMenuView alloc] initWithNibName:@"AppMenuView" bundle:nil];

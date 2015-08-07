@@ -23,6 +23,7 @@
 @property(nonatomic,strong)IBOutlet UITextField *txtFieldPassword;
 @property (nonatomic, strong) IBOutlet UILabel *welcomeMessage;
 
+
 -(void)welcomeMessageCampaign;
 -(void)socialLoginCampaign;
 

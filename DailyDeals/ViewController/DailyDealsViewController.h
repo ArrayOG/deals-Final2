@@ -21,6 +21,9 @@
 @property(nonatomic,strong)IBOutlet UIView *viewContainer;
 @property (nonatomic, strong) AppDelegate *appDelegate;
 @property (nonatomic, strong) AppMenuView *appMenu;
+@property(nonatomic,strong) IBOutlet NSMutableArray *west;
+@property(nonatomic,strong) IBOutlet NSMutableArray *east;
+@property(nonatomic,strong) IBOutlet NSMutableArray *inApp;
 
 -(BOOL) contentCampaign;
 
