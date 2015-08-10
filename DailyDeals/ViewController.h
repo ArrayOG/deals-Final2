@@ -20,9 +20,13 @@
 @property(nonatomic,strong)IBOutlet UIButton *btnRegister;
 @property(nonatomic,strong)IBOutlet UITextField *txtFieldEmail;
 @property(nonatomic,strong)IBOutlet UITextField *txtFieldPassword;
-@property (nonatomic, strong) IBOutlet UILabel *welcomeMessage;
+@property(nonatomic,strong)IBOutlet UILabel *welcomeMessage;
 
 -(void)welcomeMessageCampaign;
+-(void)socialLoginCampaign;
+-(void)welcomeMessageCampaignChanges: (NSString*) content;
+-(void)socialLoginCampaignChanges: (NSString*) content;
+
 -(IBAction)btnLoginClk:(id)sender;
 -(IBAction)btnFacebookLoginClk:(id)sender;
 -(IBAction)btnTwitterClk:(id)sender;

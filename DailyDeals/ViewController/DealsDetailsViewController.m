@@ -8,6 +8,8 @@
 
 #import "DealsDetailsViewController.h"
 #import "MyPurchaseViewController.h"
+#import "ADBMobile.h"
+
 @interface DealsDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
@@ -28,13 +30,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
     
     CGRect rect = self.textView.frame;
     rect.size.height=self.textView.contentSize.height+10.0;
     self.textView.frame=rect;
     
     [self.scrollView setContentSize:CGSizeMake(0, rect.origin.y+rect.size.height)];
+    
+    UIImage *btnImage = [UIImage imageNamed:@"facebook31.png"];
+    [self.fbShare setBackgroundImage:btnImage forState:UIControlStateNormal];
+    
+    UIImage *btnImage2 = [UIImage imageNamed:@"twitter20.png"];
+    [self.twShare setBackgroundImage:btnImage2 forState:(UIControlStateNormal)];
+    
+    _twShare.hidden = YES;
+    _fbShare.hidden = YES;
+    
+    [self socialShareCampaign];
     
     
 }
@@ -45,7 +58,7 @@
 -(IBAction)btnBuyClk:(id)sender
 {
     //PerfomSelector will go to my purchase details
-   // [self performSegueWithIdentifier:@"detailsToMyPurchaseView" sender:self];
+    // [self performSegueWithIdentifier:@"detailsToMyPurchaseView" sender:self];
     //Add coupon view controller
     
     self.controller = [self.storyboard instantiateViewControllerWithIdentifier:@"coupnViewController"];
@@ -55,7 +68,7 @@
 {
     if ([segue.identifier isEqualToString:@"detailsToMyPurchaseView"]) {
         
-       // MyPurchaseViewController *newSegue=segue.destinationViewController;
+        // MyPurchaseViewController *newSegue=segue.destinationViewController;
         //Pass any value to dailyDetails ViewController if require
     }
     
@@ -68,5 +81,45 @@
 }
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+-(void)socialShareCampaignChanges: (NSString*)content
+{
+    if ([content isEqualToString:@"tw"])
+    {
+        
+        _twShare.hidden = NO;
+        
+    }
+    
+    else if ([content isEqualToString:@"fb"]){
+        _fbShare.hidden = NO;
+    }
+    
+}
+
+
+-(void)socialShareCampaign
+{
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"deals-details" defaultContent:@"Show Nothing" parameters:nil];
+    
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
+     
+     {
+         [self performSelectorOnMainThread:@selector(socialShareCampaignChanges:) withObject:content waitUntilDone:NO];
+     }];
+    
+    //Make Mbox Confirm
+    
+    [ADBMobile targetClearCookies];
+    ADBTargetLocationRequest *orderConfirm = [ADBMobile targetCreateOrderConfirmRequestWithName:@"clicked-purchase"
+                                                                                        orderId:@"order"
+                                                                                     orderTotal:@"74.99"
+                                                                             productPurchasedId:nil
+                                                                                     parameters:nil];
+    [ADBMobile targetLoadRequest:orderConfirm callback:nil];
+    
 }
 @end

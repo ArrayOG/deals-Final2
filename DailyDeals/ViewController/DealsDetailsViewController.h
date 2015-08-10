@@ -12,4 +12,9 @@
 @property(nonatomic,strong)CouponViewController *controller;
 -(IBAction)btnBackClk:(id)sender;
 -(IBAction)btnBuyClk:(id)sender;
+
+-(void)socialShareCampaignChanges: (NSString*)content;
+-(void) socialShareCampaign;
+@property(nonatomic, strong) IBOutlet UIButton *fbShare;
+@property(nonatomic, strong) IBOutlet UIButton *twShare;
 @end

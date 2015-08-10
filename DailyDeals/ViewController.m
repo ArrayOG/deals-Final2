@@ -20,15 +20,20 @@
 {
     
     [super viewDidLoad];
-     [self welcomeMessageCampaign];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self welcomeMessageCampaign];
+    
+    // Do any additional setup after loading the view, typically from a nib.
     //Hide navigation bar and set scrollview contentSize
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     self.scrollView.contentSize=CGSizeMake(320, 560);
     
-        
-   
-  
+    _btnFacebook.hidden = YES;
+    _btnTwitter.hidden = YES;
+    
+    [self socialLoginCampaign];
+    
+    
 }
 #pragma mark Button Action
 -(IBAction)btnLoginClk:(id)sender
@@ -37,19 +42,19 @@
 }
 -(IBAction)btnFacebookLoginClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(IBAction)btnTwitterClk:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"loginToDailyDeatls" sender:self];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-   if ([segue.identifier isEqualToString:@"loginToDailyDeatls"]) {
-       
-      // DailyDealsViewController *newSegue=segue.destinationViewController;
-       //Pass any value to dailyDetails ViewController if require
-   }
+    if ([segue.identifier isEqualToString:@"loginToDailyDeatls"]) {
+        
+        // DailyDealsViewController *newSegue=segue.destinationViewController;
+        //Pass any value to dailyDetails ViewController if require
+    }
 }
 #pragma mark UITExtField delegate
 -(void)textFieldDidBeginEditing:(UITextField *)textField
@@ -61,7 +66,7 @@
 {
     if (textField==self.txtFieldEmail) {
         [self.txtFieldPassword becomeFirstResponder];
-       
+        
         
     }else if(textField==self.txtFieldPassword)
     {
@@ -105,9 +110,16 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
+-(void)welcomeMessageCampaignChanges: (NSString*) content
+{
+    self.welcomeMessage.text = content;
+    self.welcomeMessage.font = [UIFont fontWithName:@"Helvetica" size:13];
+    self.welcomeMessage.numberOfLines = 0;
+}
+
 -(void)welcomeMessageCampaign
 {
-    
     [ADBMobile targetClearCookies];
     
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"welcome-message" defaultContent:@"Find Great Deals Everyday!" parameters:nil];
@@ -115,11 +127,45 @@
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
      
      {
-         self.welcomeMessage.text = content;
-         self.welcomeMessage.font = [UIFont fontWithName:@"Helvetica" size:13];
-         self.welcomeMessage.numberOfLines = 0;
+         [self performSelectorOnMainThread:@selector(welcomeMessageCampaignChanges:) withObject:content waitUntilDone:NO];
          
      }];
+    
+}
+
+-(void)socialLoginCampaignChanges: (NSString*) content
+{
+    if ([content isEqualToString:@"fb"])
+    {
+        _btnFacebook.hidden = NO;
+    }
+    else if ([content isEqualToString:@"tw"])
+    {
+        _btnTwitter.hidden = NO;
+    }
+    else if ([content isEqualToString:@"no-social"])
+    {
+        _btnFacebook.hidden = YES;
+        _btnTwitter.hidden = YES;
+    }
+    
+}
+
+
+-(void)socialLoginCampaign
+{
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"social-signup" defaultContent:@"Default Message" parameters:nil];
+    
+    
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
+     
+     {
+         [self performSelectorOnMainThread:@selector(socialLoginCampaignChanges:) withObject:content waitUntilDone:NO];
+     }
+     ];
+    
     
 }
 
