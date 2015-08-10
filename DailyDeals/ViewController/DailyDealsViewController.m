@@ -79,7 +79,7 @@
     if ([self.inApp count] == 0) {
         return 0;
     } else {
-        return 6;
+        return 5;
     }
     
 }
@@ -96,8 +96,16 @@
         }
 
        //cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]]];
-       cell.imageView.image = [UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row + 1]];
-       cell.lblDealsTitle.text=@"Daily Deal";
+       // deals title deals location current price old price purchase count image name
+       NSString *cellString = [self.inApp objectAtIndex:(indexPath.row + 1)];
+       NSArray *cellInfo = [cellString componentsSeparatedByString: @"/"];
+       cell.imageView.image = [UIImage imageNamed:[cellInfo objectAtIndex:5]];
+       cell.lblDealsTitle.text=cellInfo[0];
+       cell.lblDealsState.text = cellInfo[1];
+       cell.lblDealsCurrentPrice.text = cellInfo[2];
+       cell.lblDealsOldPrice.text = cellInfo[3];
+       cell.lblDealsPurchasedCount.text = cellInfo[4];
+        
     return cell;
    
 }
