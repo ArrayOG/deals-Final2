@@ -50,7 +50,7 @@
     
     [ADBMobile targetClearCookies];
     
-    ADBTargetLocationRequest *locationRequest = [ADBMobile targetCreateRequestWithName:@"content-campaign" defaultContent:@"lasvegas.jpg;coachella.jpg;halfmoonbay.png;seattle.jpg" parameters:nil];
+    ADBTargetLocationRequest *locationRequest = [ADBMobile targetCreateRequestWithName:@"content-campaign" defaultContent:@"Niagara Falls Day Trip/New York, USA/$175/$500/30/niagrafalls.jpg;National Air and Space Museum Tour/Washington, D.C., USA/$30/$75/25/museumtour.jpg;Florida Keys Weekend Getaway/Key West, Florida, USA/$750/$1200/75/floridakeys.png;4 Tickets to Broadway Musical (You Choose Which!)/New York City, New York, USA/$100/$400/100/broadway.png;New England Lobster Dinner/Portland, Maine, USA/$75/$200/40/LobsterDinner.jpg;" parameters:nil];
     
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content) {
