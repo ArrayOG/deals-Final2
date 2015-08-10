@@ -36,15 +36,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
-    self.west = [arrayWithObject:<#(id)#>];
     
-    self.useWEST = [ self contentCampaign];
-    if (self.useWEST) {
-        self.inApp = self.west;
-    } else {
-        self.inApp = self.east;
-    }
-    
+    [self setArrays];
+    [self runLocationTargeting];
     //Add side bar on view
     self.appMenu=[[AppMenuView alloc] initWithNibName:@"AppMenuView" bundle:nil];
     
@@ -76,7 +70,7 @@
             cell= (DailyDealsCell *)controller.view;
             
         }
-    
+       cell.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]]];
        cell.lblDealsTitle.text=@"Title";
     return cell;
 
@@ -168,33 +162,66 @@
     }
 }
 
--(BOOL)contentCampaign
+-(void) setArrays
 {
-    __block BOOL westC = nil;
+    self.west = [NSMutableArray arrayWithObjects: @"lasvegas.jpg",
+                 @"coachella.jpg",
+                 @"halfmoonbay.png",
+                 @"seattle.jpg",
+                 nil];
+    self.east = [NSMutableArray arrayWithObjects: @"niagrafalls.jpg",
+                 @"LobsterDinner.jpg",
+                 @"floridakeys.png",
+                 @"broadway.png",
+                 nil];
+}
+
+
+- (void) runLocationTargeting {
+    /* Adobe Tracking - Target
+     *
+     * reset cookies to ensure target gives us a different experience depending on user's location choice
+     * note: we are resetting cookies for this demo so the target server will allow us to reset experiences
+     */
     [ADBMobile targetClearCookies];
     
-    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"welcome-message" defaultContent:@"Find Great Deals Everyday!" parameters:nil];
     
-    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
-     
-     {
-         if ([content isEqualToString:@"westCoast"]) {
-             westC = YES;
-         } else {
-             westC = NO;
-         }
-         
-     }];
+    /* Adobe Tracking - Target
+     *
+     * create a request for the geo targeting location
+     * default is black background and white text
+     */
+    ADBTargetLocationRequest *locationRequest = [ADBMobile targetCreateRequestWithName:@"content-campaign" defaultContent:@"westCoast" parameters:nil];
     
-    return westC;
-    
+    /* Adobe Tracking - Target
+     *
+     * send our location request and in the callback, change the colors we get back from target
+     */
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content) {
+        
+    [self performSelectorOnMainThread:@selector(setContent:) withObject:content waitUntilDone:NO];
+    }];
 }
+
+-(void) setContent:(NSString *)chosen
+{
+    {
+        if ([chosen isEqualToString:@"westCoast"]) {
+            self.inApp = self.west;
+        } else {
+            self.inApp = self.east;
+        }
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "AppMenuView.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface DailyDealsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate,MenuDelegate>
 {
@@ -24,8 +25,8 @@
 @property(nonatomic,strong) IBOutlet NSMutableArray *west;
 @property(nonatomic,strong) IBOutlet NSMutableArray *east;
 @property(nonatomic,strong) IBOutlet NSMutableArray *inApp;
--(BOOL)contentCampaign;
-
+-(void)runLocationTargeting;
+-(void) setArrays;
 -(IBAction)btnProfileClk:(id)sender;
 -(IBAction)btnSlideManuClk:(id)sender;
 -(IBAction)btnSearchClk:(id)sender;
