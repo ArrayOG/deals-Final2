@@ -111,15 +111,6 @@
          [self performSelectorOnMainThread:@selector(socialShareCampaignChanges:) withObject:content waitUntilDone:NO];
      }];
     
-    //Make Mbox Confirm
-    
-    [ADBMobile targetClearCookies];
-    ADBTargetLocationRequest *orderConfirm = [ADBMobile targetCreateOrderConfirmRequestWithName:@"clicked-purchase"
-                                                                                        orderId:@"order"
-                                                                                     orderTotal:@"74.99"
-                                                                             productPurchasedId:nil
-                                                                                     parameters:nil];
-    [ADBMobile targetLoadRequest:orderConfirm callback:nil];
     
 }
 @end
