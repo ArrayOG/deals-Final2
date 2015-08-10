@@ -32,6 +32,7 @@
     _btnTwitter.hidden = YES;
     
     [self socialLoginCampaign];
+    [self makeMboxConfirm]; 
     
     
 }
@@ -166,6 +167,16 @@
      }
      ];
     
+    
+}
+
+-(void) makeMboxConfirm
+{
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest* orderConfirm = [ADBMobile targetCreateOrderConfirmRequestWithName:@"signed-up" orderId:@"order" orderTotal:@"2.00" productPurchasedId:nil parameters:nil];
+    
+    [ADBMobile targetLoadRequest:orderConfirm callback:nil];
     
 }
 

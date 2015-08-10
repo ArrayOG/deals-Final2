@@ -26,6 +26,7 @@
 -(void)socialLoginCampaign;
 -(void)welcomeMessageCampaignChanges: (NSString*) content;
 -(void)socialLoginCampaignChanges: (NSString*) content;
+-(void) makeMboxConfirm;
 
 -(IBAction)btnLoginClk:(id)sender;
 -(IBAction)btnFacebookLoginClk:(id)sender;
