@@ -57,10 +57,6 @@
         self.inApp = [content componentsSeparatedByString: @";"];
         [self performSelectorOnMainThread:@selector(setContent) withObject:content waitUntilDone:NO];
         
-        for (int i = 0; i < [_inApp count]; i++){
-            NSLog([_inApp objectAtIndex: i]);
-        }
-        
     }];
 }
 
@@ -100,7 +96,7 @@
         }
 
        //cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]]];
-       cell.imageView.image = [UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]];
+       cell.imageView.image = [UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row + 1]];
        cell.lblDealsTitle.text=@"Daily Deal";
     return cell;
    
