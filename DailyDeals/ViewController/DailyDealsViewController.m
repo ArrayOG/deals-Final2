@@ -54,6 +54,7 @@
     
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content) {
+        NSLog(content);
         self.inApp = [content componentsSeparatedByString: @";"];
         [self performSelectorOnMainThread:@selector(setContent) withObject:content waitUntilDone:NO];
         
@@ -97,7 +98,8 @@
 
        //cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]]];
        // deals title deals location current price old price purchase count image name
-       NSString *cellString = [self.inApp objectAtIndex:(indexPath.row + 1)];
+       NSString *cellString = [self.inApp objectAtIndex:(indexPath.row)];
+        NSLog(cellString);
        NSArray *cellInfo = [cellString componentsSeparatedByString: @"/"];
        cell.imageView.image = [UIImage imageNamed:[cellInfo objectAtIndex:5]];
        cell.lblDealsTitle.text=cellInfo[0];
