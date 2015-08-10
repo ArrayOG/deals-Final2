@@ -22,11 +22,9 @@
 @property(nonatomic,strong)IBOutlet UIView *viewContainer;
 @property (nonatomic, strong) AppDelegate *appDelegate;
 @property (nonatomic, strong) AppMenuView *appMenu;
-@property(nonatomic,strong) IBOutlet NSMutableArray *west;
-@property(nonatomic,strong) IBOutlet NSMutableArray *east;
-@property(nonatomic,strong) IBOutlet NSMutableArray *inApp;
+@property(nonatomic,strong) IBOutlet NSArray *inApp;
 -(void)runLocationTargeting;
--(void) setArrays;
+-(void)setContent;
 -(IBAction)btnProfileClk:(id)sender;
 -(IBAction)btnSlideManuClk:(id)sender;
 -(IBAction)btnSearchClk:(id)sender;

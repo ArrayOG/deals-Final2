@@ -15,5 +15,7 @@
 @property(nonatomic,strong)IBOutlet UILabel *lblDealsOldPrice;
 @property(nonatomic,strong)IBOutlet UILabel *lblDealsBuyStatus;
 @property(nonatomic,strong)IBOutlet UILabel *lblDealsPurchasedCount;
+
+
 @property(nonatomic,strong)IBOutlet UIImageView *imageView;
 @end

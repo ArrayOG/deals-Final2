@@ -24,20 +24,19 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+
         // Custom initialization
-        self.east = [[NSMutableArray alloc] init];
-        self.west =[[NSMutableArray alloc] init];
         self.inApp = [[NSMutableArray alloc] init];
+
     }
     return self;
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
-    
-    [self setArrays];
     [self runLocationTargeting];
     //Add side bar on view
     self.appMenu=[[AppMenuView alloc] initWithNibName:@"AppMenuView" bundle:nil];
@@ -46,22 +45,51 @@
 
     [self.viewAppMenu addSubview:self.appMenu.view];
    
-   
-   
+}
+- (void) runLocationTargeting {
+    
+    [ADBMobile targetClearCookies];
+    
+    ADBTargetLocationRequest *locationRequest = [ADBMobile targetCreateRequestWithName:@"content-campaign" defaultContent:@"lasvegas.jpg;coachella.jpg;halfmoonbay.png;seattle.jpg" parameters:nil];
+    
+    
+    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content) {
+        self.inApp = [content componentsSeparatedByString: @";"];
+        [self performSelectorOnMainThread:@selector(setContent) withObject:content waitUntilDone:NO];
+        
+        for (int i = 0; i < [_inApp count]; i++){
+            NSLog([_inApp objectAtIndex: i]);
+        }
+        
+    }];
+}
+
+-(void) setContent
+{
+    [self.tblViewDeals reloadData];
+
     
 }
+
 #pragma mark UITableViewDelegate and UITableViewDatasource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    if ([self.inApp count] == 0) {
+        return 0;
+    } else {
+        return 1;
+    }
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    
-    return 5;
-    
+    if ([self.inApp count] == 0) {
+        return 0;
+    } else {
+        return 6;
+    }
     
 }
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        
     NSString *cellIdentifier=@"DailyDealsCell";
 
         DailyDealsCell *cell=(DailyDealsCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -70,13 +98,14 @@
             cell= (DailyDealsCell *)controller.view;
             
         }
-       cell.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]]];
-       cell.lblDealsTitle.text=@"Title";
-    return cell;
 
+       //cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]]];
+       cell.imageView.image = [UIImage imageNamed:[self.inApp objectAtIndex:indexPath.row]];
+       cell.lblDealsTitle.text=@"Daily Deal";
+    return cell;
    
-    
 }
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   [self performSegueWithIdentifier:@"DailyDealsToDetails" sender:self];
@@ -162,57 +191,8 @@
     }
 }
 
--(void) setArrays
-{
-    self.west = [NSMutableArray arrayWithObjects: @"lasvegas.jpg",
-                 @"coachella.jpg",
-                 @"halfmoonbay.png",
-                 @"seattle.jpg",
-                 nil];
-    self.east = [NSMutableArray arrayWithObjects: @"niagrafalls.jpg",
-                 @"LobsterDinner.jpg",
-                 @"floridakeys.png",
-                 @"broadway.png",
-                 nil];
-}
 
 
-- (void) runLocationTargeting {
-    /* Adobe Tracking - Target
-     *
-     * reset cookies to ensure target gives us a different experience depending on user's location choice
-     * note: we are resetting cookies for this demo so the target server will allow us to reset experiences
-     */
-    [ADBMobile targetClearCookies];
-    
-    
-    /* Adobe Tracking - Target
-     *
-     * create a request for the geo targeting location
-     * default is black background and white text
-     */
-    ADBTargetLocationRequest *locationRequest = [ADBMobile targetCreateRequestWithName:@"content-campaign" defaultContent:@"westCoast" parameters:nil];
-    
-    /* Adobe Tracking - Target
-     *
-     * send our location request and in the callback, change the colors we get back from target
-     */
-    [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content) {
-        
-    [self performSelectorOnMainThread:@selector(setContent:) withObject:content waitUntilDone:NO];
-    }];
-}
-
--(void) setContent:(NSString *)chosen
-{
-    {
-        if ([chosen isEqualToString:@"westCoast"]) {
-            self.inApp = self.west;
-        } else {
-            self.inApp = self.east;
-        }
-    }
-}
 
 - (void)didReceiveMemoryWarning
 {
