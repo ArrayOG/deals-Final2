@@ -117,6 +117,7 @@
 		8EEF9FCD18F42AD00022E7BB /* AppMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCA18F42AD00022E7BB /* AppMenuCell.xib */; };
 		8EEF9FCE18F42AD00022E7BB /* AppMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCB18F42AD00022E7BB /* AppMenuCell.m */; };
 		8EEF9FD218F433360022E7BB /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FD118F433360022E7BB /* Container.m */; };
+		900443EC1B7A82B900490EB4 /* dealsimagesfinal in Resources */ = {isa = PBXBuildFile; fileRef = 900443EB1B7A82B900490EB4 /* dealsimagesfinal */; };
 		A01689771B73F5D700E322CA /* floridakeys.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689761B73F5D700E322CA /* floridakeys.png */; };
 		A01689791B73F5F000E322CA /* seattle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689781B73F5F000E322CA /* seattle.jpg */; };
 		A016897B1B73F62000E322CA /* LobsterDinner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016897A1B73F62000E322CA /* LobsterDinner.jpg */; };
@@ -265,6 +266,7 @@
 		8EEF9FCC18F42AD00022E7BB /* AppMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMenuCell.h; sourceTree = "<group>"; };
 		8EEF9FD018F433360022E7BB /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		8EEF9FD118F433360022E7BB /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+		900443EB1B7A82B900490EB4 /* dealsimagesfinal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dealsimagesfinal; sourceTree = "<group>"; };
 		A01689761B73F5D700E322CA /* floridakeys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floridakeys.png; path = DealsImages/floridakeys.png; sourceTree = "<group>"; };
 		A01689781B73F5F000E322CA /* seattle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = seattle.jpg; path = DealsImages/seattle.jpg; sourceTree = "<group>"; };
 		A016897A1B73F62000E322CA /* LobsterDinner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LobsterDinner.jpg; path = DealsImages/LobsterDinner.jpg; sourceTree = "<group>"; };
@@ -419,8 +421,12 @@
 		8EC0358D18F2B2A800946BA8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				136B36D21B7A8CF9001F7ECC /* coachella.png */,
 				136B36D41B7A8CF9001F7ECC /* halfmoonbay.jpeg */,
+=======
+				900443EB1B7A82B900490EB4 /* dealsimagesfinal */,
+>>>>>>> origin/master
 				A01689821B73F6A400E322CA /* niagrafalls.jpg */,
 				A01689801B73F69000E322CA /* lasvegas.jpg */,
 				A016897E1B73F67B00E322CA /* museumtour.jpg */,
@@ -687,7 +693,10 @@
 				8EEF9FB818F41B2F0022E7BB /* shadow.png in Resources */,
 				136B36D81B7A8CF9001F7ECC /* halfmoonbay.jpeg in Resources */,
 				8EEF9F8B18F3F6610022E7BB /* backArrow@2x.png in Resources */,
+<<<<<<< HEAD
 				136B36D91B7A8CF9001F7ECC /* twitterflat.png in Resources */,
+=======
+>>>>>>> origin/master
 				8EC035A918F2C33300946BA8 /* Icon-Password@2x.png in Resources */,
 				8EEF9F8A18F3F6610022E7BB /* backArrow.png in Resources */,
 				136B36D61B7A8CF9001F7ECC /* coachella.png in Resources */,
@@ -730,6 +739,7 @@
 				8EEF9FB318F417CB0022E7BB /* couponBackground@2x.png in Resources */,
 				8E3B304218F3C62100DEC655 /* cross.png in Resources */,
 				8EC035BA18F2CF2D00946BA8 /* Search-Icon@2x.png in Resources */,
+				900443EC1B7A82B900490EB4 /* dealsimagesfinal in Resources */,
 				8EEF9FB218F417CB0022E7BB /* couponBackground.png in Resources */,
 				8EEF9FC918F42A790022E7BB /* AppMenuView.xib in Resources */,
 			);
