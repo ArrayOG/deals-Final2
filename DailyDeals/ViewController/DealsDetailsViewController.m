@@ -38,10 +38,10 @@
     
     [self.scrollView setContentSize:CGSizeMake(0, rect.origin.y+rect.size.height)];
     
-    UIImage *btnImage = [UIImage imageNamed:@"facebookflat.png"];
+    UIImage *btnImage = [UIImage imageNamed:@"facebook31.png"];
     [self.fbShare setBackgroundImage:btnImage forState:UIControlStateNormal];
     
-    UIImage *btnImage2 = [UIImage imageNamed:@"twitterflat.png"];
+    UIImage *btnImage2 = [UIImage imageNamed:@"twitter20.png"];
     [self.twShare setBackgroundImage:btnImage2 forState:(UIControlStateNormal)];
     
     _twShare.hidden = YES;
