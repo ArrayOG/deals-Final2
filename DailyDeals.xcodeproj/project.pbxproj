@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13EA0BB61B728870002F99DD /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 13EA0BB11B728870002F99DD /* ADBMobileConfig.json */; };
-		13EA0BB71B728870002F99DD /* AdobeMobileLibrary_Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BB31B728870002F99DD /* AdobeMobileLibrary_Extension.a */; };
-		13EA0BB81B728871002F99DD /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BB41B728870002F99DD /* AdobeMobileLibrary.a */; };
 		13EA0BBB1B728940002F99DD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BBA1B728940002F99DD /* libsqlite3.dylib */; };
 		13EA0BBD1B728963002F99DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BBC1B728963002F99DD /* SystemConfiguration.framework */; };
 		13EA0BBF1B72896B002F99DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BBE1B72896B002F99DD /* CoreLocation.framework */; };
@@ -118,6 +115,11 @@
 		900443F21B7A9B2000490EB4 /* facebookflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 900443F11B7A9B2000490EB4 /* facebookflat.png */; };
 		900443F41B7A9B2500490EB4 /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 900443F31B7A9B2500490EB4 /* halfmoonbay.jpeg */; };
 		900443F61B7A9B2A00490EB4 /* twitterflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 900443F51B7A9B2A00490EB4 /* twitterflat.png */; };
+		900F8D021B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 in Resources */ = {isa = PBXBuildFile; fileRef = 900F8D011B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 */; };
+		900F8D0D1B7AA7B30021FEF5 /* AdobeMobileLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */; };
+		900F8D101B7AA7C30021FEF5 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 900F8D0F1B7AA7C30021FEF5 /* ADBMobileConfig.json */; };
+		900F8D121B7AA7C80021FEF5 /* AdobeMobileLibrary_Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900F8D111B7AA7C80021FEF5 /* AdobeMobileLibrary_Extension.a */; };
+		900F8D141B7AA7CE0021FEF5 /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900F8D131B7AA7CE0021FEF5 /* AdobeMobileLibrary.a */; };
 		A01689771B73F5D700E322CA /* floridakeys.png in Resources */ = {isa = PBXBuildFile; fileRef = A01689761B73F5D700E322CA /* floridakeys.png */; };
 		A01689791B73F5F000E322CA /* seattle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689781B73F5F000E322CA /* seattle.jpg */; };
 		A016897B1B73F62000E322CA /* LobsterDinner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016897A1B73F62000E322CA /* LobsterDinner.jpg */; };
@@ -139,10 +141,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13EA0BB11B728870002F99DD /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfig.json; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/ADBMobileConfig.json"; sourceTree = SOURCE_ROOT; };
-		13EA0BB21B728870002F99DD /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBMobile.h; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/ADBMobile.h"; sourceTree = SOURCE_ROOT; };
-		13EA0BB31B728870002F99DD /* AdobeMobileLibrary_Extension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AdobeMobileLibrary_Extension.a; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/AdobeMobileLibrary_Extension.a"; sourceTree = SOURCE_ROOT; };
-		13EA0BB41B728870002F99DD /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AdobeMobileLibrary.a; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/AdobeMobileLibrary.a"; sourceTree = SOURCE_ROOT; };
 		13EA0BBA1B728940002F99DD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		13EA0BBC1B728963002F99DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		13EA0BBE1B72896B002F99DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -267,6 +265,12 @@
 		900443F11B7A9B2000490EB4 /* facebookflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookflat.png; path = dealsimagesfinal/facebookflat.png; sourceTree = "<group>"; };
 		900443F31B7A9B2500490EB4 /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = dealsimagesfinal/halfmoonbay.jpeg; sourceTree = "<group>"; };
 		900443F51B7A9B2A00490EB4 /* twitterflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterflat.png; path = dealsimagesfinal/twitterflat.png; sourceTree = "<group>"; };
+		900F8D011B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Deals iOS_iOS-4.5.4"; sourceTree = "<group>"; };
+		900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AdobeMobileLibrary; sourceTree = "<group>"; };
+		900F8D0E1B7AA7BD0021FEF5 /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBMobile.h; path = AdobeMobileLibrary/ADBMobile.h; sourceTree = "<group>"; };
+		900F8D0F1B7AA7C30021FEF5 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfig.json; path = AdobeMobileLibrary/ADBMobileConfig.json; sourceTree = "<group>"; };
+		900F8D111B7AA7C80021FEF5 /* AdobeMobileLibrary_Extension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AdobeMobileLibrary_Extension.a; path = AdobeMobileLibrary/AdobeMobileLibrary_Extension.a; sourceTree = "<group>"; };
+		900F8D131B7AA7CE0021FEF5 /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AdobeMobileLibrary.a; path = AdobeMobileLibrary/AdobeMobileLibrary.a; sourceTree = "<group>"; };
 		A01689761B73F5D700E322CA /* floridakeys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floridakeys.png; path = DealsImages/floridakeys.png; sourceTree = "<group>"; };
 		A01689781B73F5F000E322CA /* seattle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = seattle.jpg; path = DealsImages/seattle.jpg; sourceTree = "<group>"; };
 		A016897A1B73F62000E322CA /* LobsterDinner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LobsterDinner.jpg; path = DealsImages/LobsterDinner.jpg; sourceTree = "<group>"; };
@@ -286,12 +290,12 @@
 				13EA0BBF1B72896B002F99DD /* CoreLocation.framework in Frameworks */,
 				13EA0BBD1B728963002F99DD /* SystemConfiguration.framework in Frameworks */,
 				13EA0BBB1B728940002F99DD /* libsqlite3.dylib in Frameworks */,
-				13EA0BB71B728870002F99DD /* AdobeMobileLibrary_Extension.a in Frameworks */,
 				8EEF9FBF18F420740022E7BB /* QuartzCore.framework in Frameworks */,
 				8EC0355B18F2872200946BA8 /* CoreGraphics.framework in Frameworks */,
 				8EC0355D18F2872200946BA8 /* UIKit.framework in Frameworks */,
+				900F8D121B7AA7C80021FEF5 /* AdobeMobileLibrary_Extension.a in Frameworks */,
 				8EC0355918F2872200946BA8 /* Foundation.framework in Frameworks */,
-				13EA0BB81B728871002F99DD /* AdobeMobileLibrary.a in Frameworks */,
+				900F8D141B7AA7CE0021FEF5 /* AdobeMobileLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,10 +375,12 @@
 		8EC0355E18F2872200946BA8 /* DailyDeals */ = {
 			isa = PBXGroup;
 			children = (
-				13EA0BB11B728870002F99DD /* ADBMobileConfig.json */,
-				13EA0BB21B728870002F99DD /* ADBMobile.h */,
-				13EA0BB31B728870002F99DD /* AdobeMobileLibrary_Extension.a */,
-				13EA0BB41B728870002F99DD /* AdobeMobileLibrary.a */,
+				900F8D0E1B7AA7BD0021FEF5 /* ADBMobile.h */,
+				900F8D0F1B7AA7C30021FEF5 /* ADBMobileConfig.json */,
+				900F8D111B7AA7C80021FEF5 /* AdobeMobileLibrary_Extension.a */,
+				900F8D131B7AA7CE0021FEF5 /* AdobeMobileLibrary.a */,
+				900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */,
+				900F8D011B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 */,
 				8EEF9FCF18F433360022E7BB /* ObjectClass */,
 				8EC0356718F2872200946BA8 /* AppDelegate.h */,
 				8EC0356818F2872200946BA8 /* AppDelegate.m */,
@@ -649,6 +655,7 @@
 				8EEF9FC318F421C80022E7BB /* barcodeimage@2x.png in Resources */,
 				8EEF9FCD18F42AD00022E7BB /* AppMenuCell.xib in Resources */,
 				8EEF9FBC18F41CE60022E7BB /* squarewithwhitebg.png in Resources */,
+				900F8D021B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 in Resources */,
 				A01689811B73F69000E322CA /* lasvegas.jpg in Resources */,
 				8EEF9F9318F3F6610022E7BB /* Time-Icon@2x.png in Resources */,
 				8EC035B818F2CF2D00946BA8 /* hamburger.png in Resources */,
@@ -658,7 +665,6 @@
 				8E3B304318F3C62100DEC655 /* cross@2x.png in Resources */,
 				A01689771B73F5D700E322CA /* floridakeys.png in Resources */,
 				8EC035BF18F2CF2D00946BA8 /* detailWithLine@2x.png in Resources */,
-				13EA0BB61B728870002F99DD /* ADBMobileConfig.json in Resources */,
 				8EEF9FC218F421C80022E7BB /* barcodeimage.png in Resources */,
 				8E3B303F18F3C62100DEC655 /* btnEdit@2x.png in Resources */,
 				8EEF9FB018F417CB0022E7BB /* barCode.png in Resources */,
@@ -679,6 +685,7 @@
 				8EC0359D18F2B93100946BA8 /* Icon-Facebook.png in Resources */,
 				8EC0356318F2872200946BA8 /* InfoPlist.strings in Resources */,
 				8EC035AF18F2CCD700946BA8 /* navBar@2x.png in Resources */,
+				900F8D0D1B7AA7B30021FEF5 /* AdobeMobileLibrary in Resources */,
 				8EC0356C18F2872200946BA8 /* Main.storyboard in Resources */,
 				8EC0359B18F2B93100946BA8 /* Button-Log-in.png in Resources */,
 				8EEF9FA118F4025F0022E7BB /* purchaseButtom.png in Resources */,
@@ -720,6 +727,7 @@
 				8E3B304618F3C62100DEC655 /* on.png in Resources */,
 				8EC035A018F2B93100946BA8 /* Icon-Facebook@2x.png in Resources */,
 				8E3B303818F3C62100DEC655 /* Arrow.png in Resources */,
+				900F8D101B7AA7C30021FEF5 /* ADBMobileConfig.json in Resources */,
 				8E3B303918F3C62100DEC655 /* Arrow@2x.png in Resources */,
 				8EC035C218F2D7EE00946BA8 /* profileSubView.png in Resources */,
 				A016897D1B73F64000E322CA /* scuba.jpg in Resources */,
@@ -900,6 +908,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DailyDeals",
 					"iOS_iOS-4.5.4/AdobeMobileLibrary",
+					"$(PROJECT_DIR)/DailyDeals/Deals",
+					"iOS_iOS-4.5.4/AdobeMobileLibrary",
+					"$(PROJECT_DIR)/DailyDeals/AdobeMobileLibrary",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -919,6 +930,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DailyDeals",
 					"iOS_iOS-4.5.4/AdobeMobileLibrary",
+					"$(PROJECT_DIR)/DailyDeals/Deals",
+					"iOS_iOS-4.5.4/AdobeMobileLibrary",
+					"$(PROJECT_DIR)/DailyDeals/AdobeMobileLibrary",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
