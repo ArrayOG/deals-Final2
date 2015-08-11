@@ -23,6 +23,12 @@
     
     [self welcomeMessageCampaign];
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Daily Deals" message:@"Please take a moment to rate our app!" delegate:self cancelButtonTitle:@"Not now, remind me later" otherButtonTitles:nil];
+    // optional - add more buttons:
+    [alert addButtonWithTitle:@"Yes, I'll rate you now"];
+    [alert addButtonWithTitle:@"No, thanks"];
+    [alert show];
+    
     // Do any additional setup after loading the view, typically from a nib.
     //Hide navigation bar and set scrollview contentSize
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
