@@ -449,6 +449,10 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coachella.jpg" id="bUC-sp-jDZ">
+                                                            <rect key="frame" x="10" y="0.0" width="300" height="179"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price-rectangle.png" id="1xu-aF-H1M">
                                                             <rect key="frame" x="75" y="187" width="65" height="26"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -456,10 +460,6 @@
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailWithLine.png" id="z2G-DG-oAL">
                                                             <rect key="frame" x="10" y="136" width="300" height="88"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coachella.jpg" id="bUC-sp-jDZ">
-                                                            <rect key="frame" x="10" y="0.0" width="300" height="179"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australian" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bgn-St-5h8">
                                                             <rect key="frame" x="15" y="158" width="288" height="21"/>
