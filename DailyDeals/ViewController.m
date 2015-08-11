@@ -20,6 +20,12 @@
 {
     
     [super viewDidLoad];
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Daily Deals" message:@"Please take a moment to rate our app!" delegate:self cancelButtonTitle:@"Not now, remind me later" otherButtonTitles:nil];
+    // optional - add more buttons:
+    [alert addButtonWithTitle:@"Yes, I'll rate you now"];
+    [alert addButtonWithTitle:@"No, thanks"];
+    [alert show];
     
     [self welcomeMessageCampaign];
     
@@ -36,6 +42,9 @@
     
     
 }
+
+
+
 #pragma mark Button Action
 -(IBAction)btnLoginClk:(id)sender
 {

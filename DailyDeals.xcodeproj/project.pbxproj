@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136B36CC1B7A7A6D001F7ECC /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 136B36CA1B7A7A6D001F7ECC /* halfmoonbay.jpeg */; };
+		136B36CD1B7A7A6D001F7ECC /* coachella.png in Resources */ = {isa = PBXBuildFile; fileRef = 136B36CB1B7A7A6D001F7ECC /* coachella.png */; };
+		136B36D01B7A7A84001F7ECC /* twitterflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 136B36CE1B7A7A84001F7ECC /* twitterflat.png */; };
+		136B36D11B7A7A84001F7ECC /* facebookflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 136B36CF1B7A7A84001F7ECC /* facebookflat.png */; };
 		13EA0BB61B728870002F99DD /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 13EA0BB11B728870002F99DD /* ADBMobileConfig.json */; };
 		13EA0BB71B728870002F99DD /* AdobeMobileLibrary_Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BB31B728870002F99DD /* AdobeMobileLibrary_Extension.a */; };
 		13EA0BB81B728871002F99DD /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BB41B728870002F99DD /* AdobeMobileLibrary.a */; };
@@ -120,11 +124,7 @@
 		A016897F1B73F67B00E322CA /* museumtour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A016897E1B73F67B00E322CA /* museumtour.jpg */; };
 		A01689811B73F69000E322CA /* lasvegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689801B73F69000E322CA /* lasvegas.jpg */; };
 		A01689831B73F6A400E322CA /* niagrafalls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689821B73F6A400E322CA /* niagrafalls.jpg */; };
-		A0D024141B7A721A002CB3BA /* coachella.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024131B7A721A002CB3BA /* coachella.png */; };
 		A0D024161B7A729E002CB3BA /* broadway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0D024151B7A729E002CB3BA /* broadway.jpg */; };
-		A0D024181B7A72BA002CB3BA /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A0D024171B7A72BA002CB3BA /* halfmoonbay.jpeg */; };
-		A0D0241A1B7A7319002CB3BA /* facebookflat.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024191B7A7319002CB3BA /* facebookflat.png */; };
-		A0D0241C1B7A7323002CB3BA /* twitterflat.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D0241B1B7A7323002CB3BA /* twitterflat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +138,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		136B36CA1B7A7A6D001F7ECC /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = ../../../../../../Downloads/halfmoonbay.jpeg; sourceTree = "<group>"; };
+		136B36CB1B7A7A6D001F7ECC /* coachella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coachella.png; path = ../../../../../../Downloads/coachella.png; sourceTree = "<group>"; };
+		136B36CE1B7A7A84001F7ECC /* twitterflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterflat.png; path = ../../../../../../Downloads/twitterflat.png; sourceTree = "<group>"; };
+		136B36CF1B7A7A84001F7ECC /* facebookflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookflat.png; path = ../../../../../../Downloads/facebookflat.png; sourceTree = "<group>"; };
 		13EA0BB11B728870002F99DD /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfig.json; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/ADBMobileConfig.json"; sourceTree = SOURCE_ROOT; };
 		13EA0BB21B728870002F99DD /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBMobile.h; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/ADBMobile.h"; sourceTree = SOURCE_ROOT; };
 		13EA0BB31B728870002F99DD /* AdobeMobileLibrary_Extension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AdobeMobileLibrary_Extension.a; path = "DailyDeals iOS_iOS-4.5.4/AdobeMobileLibrary/AdobeMobileLibrary_Extension.a"; sourceTree = SOURCE_ROOT; };
@@ -268,11 +272,7 @@
 		A016897E1B73F67B00E322CA /* museumtour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = museumtour.jpg; path = DealsImages/museumtour.jpg; sourceTree = "<group>"; };
 		A01689801B73F69000E322CA /* lasvegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lasvegas.jpg; path = DealsImages/lasvegas.jpg; sourceTree = "<group>"; };
 		A01689821B73F6A400E322CA /* niagrafalls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = niagrafalls.jpg; path = DealsImages/niagrafalls.jpg; sourceTree = "<group>"; };
-		A0D024131B7A721A002CB3BA /* coachella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coachella.png; path = "../../../../Documents/deals-Final2/DailyDeals/Images/DealsImages/coachella.png"; sourceTree = "<group>"; };
 		A0D024151B7A729E002CB3BA /* broadway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broadway.jpg; path = DealsImages/broadway.jpg; sourceTree = "<group>"; };
-		A0D024171B7A72BA002CB3BA /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = "../../../deals-Final2-master/DailyDeals/Images/DealsImages/halfmoonbay.jpeg"; sourceTree = "<group>"; };
-		A0D024191B7A7319002CB3BA /* facebookflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookflat.png; path = ../../../facebookflat.png; sourceTree = "<group>"; };
-		A0D0241B1B7A7323002CB3BA /* twitterflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterflat.png; path = ../../../twitterflat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +419,8 @@
 		8EC0358D18F2B2A800946BA8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				136B36CA1B7A7A6D001F7ECC /* halfmoonbay.jpeg */,
+				136B36CB1B7A7A6D001F7ECC /* coachella.png */,
 				A01689821B73F6A400E322CA /* niagrafalls.jpg */,
 				A01689801B73F69000E322CA /* lasvegas.jpg */,
 				A016897E1B73F67B00E322CA /* museumtour.jpg */,
@@ -426,9 +428,7 @@
 				A016897A1B73F62000E322CA /* LobsterDinner.jpg */,
 				A01689781B73F5F000E322CA /* seattle.jpg */,
 				A01689761B73F5D700E322CA /* floridakeys.png */,
-				A0D024131B7A721A002CB3BA /* coachella.png */,
 				A0D024151B7A729E002CB3BA /* broadway.jpg */,
-				A0D024171B7A72BA002CB3BA /* halfmoonbay.jpeg */,
 				8EEF9FA918F417CB0022E7BB /* coupon */,
 				8EEF9F9A18F4025F0022E7BB /* myPurchase */,
 				8EEF9F7F18F3F6610022E7BB /* PurchaseDetails */,
@@ -436,6 +436,8 @@
 				8EC035C418F2DA1500946BA8 /* _Group_-copy-3@2x.png */,
 				8EC035B018F2CF2D00946BA8 /* hamburger.png */,
 				8EC035B118F2CF2D00946BA8 /* detailWithLine.png */,
+				136B36CF1B7A7A84001F7ECC /* facebookflat.png */,
+				136B36CE1B7A7A84001F7ECC /* twitterflat.png */,
 				8EC035B218F2CF2D00946BA8 /* Search-Icon@2x.png */,
 				8EC035B318F2CF2D00946BA8 /* Search-Icon.png */,
 				8EC035B418F2CF2D00946BA8 /* price-rectangle.png */,
@@ -450,8 +452,6 @@
 				8EC035A718F2C33300946BA8 /* Icon-Email@2x.png */,
 				8EC0359218F2B93100946BA8 /* Button-Log-in.png */,
 				8EC0359318F2B93100946BA8 /* Button-Register.png */,
-				A0D024191B7A7319002CB3BA /* facebookflat.png */,
-				A0D0241B1B7A7323002CB3BA /* twitterflat.png */,
 				8EC0359418F2B93100946BA8 /* Icon-Facebook.png */,
 				8EC0359518F2B93100946BA8 /* Icon-Twitter.png */,
 				8EC0359718F2B93100946BA8 /* Icon-Facebook@2x.png */,
@@ -652,13 +652,11 @@
 				8EC0359118F2B2A800946BA8 /* Logo@2x.png in Resources */,
 				8EEF9F8D18F3F6610022E7BB /* btnBuy@2x.png in Resources */,
 				8EC035BC18F2CF2D00946BA8 /* price-rectangle.png in Resources */,
-				A0D024141B7A721A002CB3BA /* coachella.png in Resources */,
 				8E3B304318F3C62100DEC655 /* cross@2x.png in Resources */,
 				A01689771B73F5D700E322CA /* floridakeys.png in Resources */,
 				8EC035BF18F2CF2D00946BA8 /* detailWithLine@2x.png in Resources */,
 				13EA0BB61B728870002F99DD /* ADBMobileConfig.json in Resources */,
 				8EEF9FC218F421C80022E7BB /* barcodeimage.png in Resources */,
-				A0D0241C1B7A7323002CB3BA /* twitterflat.png in Resources */,
 				8E3B303F18F3C62100DEC655 /* btnEdit@2x.png in Resources */,
 				8EEF9FB018F417CB0022E7BB /* barCode.png in Resources */,
 				8EC0357118F2872200946BA8 /* Images.xcassets in Resources */,
@@ -687,8 +685,8 @@
 				8EEF9F9118F3F6610022E7BB /* purchaseDetails@2x.png in Resources */,
 				8EC035C518F2DA1500946BA8 /* _Group_-copy-3@2x.png in Resources */,
 				8EEF9FB818F41B2F0022E7BB /* shadow.png in Resources */,
+				136B36CC1B7A7A6D001F7ECC /* halfmoonbay.jpeg in Resources */,
 				8EEF9F8B18F3F6610022E7BB /* backArrow@2x.png in Resources */,
-				A0D0241A1B7A7319002CB3BA /* facebookflat.png in Resources */,
 				8EC035A918F2C33300946BA8 /* Icon-Password@2x.png in Resources */,
 				8EEF9F8A18F3F6610022E7BB /* backArrow.png in Resources */,
 				8EC035A118F2B93100946BA8 /* Icon-Twitter@2x.png in Resources */,
@@ -697,8 +695,10 @@
 				A01689791B73F5F000E322CA /* seattle.jpg in Resources */,
 				8E3B303E18F3C62100DEC655 /* btnEdit.png in Resources */,
 				8EEF9F9F18F4025F0022E7BB /* cellDivider.png in Resources */,
+				136B36D11B7A7A84001F7ECC /* facebookflat.png in Resources */,
 				8EEF9F8E18F3F6610022E7BB /* buttomBuyStrip.png in Resources */,
 				8E3B303C18F3C62100DEC655 /* boxWithRed.png in Resources */,
+				136B36D01B7A7A84001F7ECC /* twitterflat.png in Resources */,
 				8EC035AB18F2C33300946BA8 /* Icon-Email@2x.png in Resources */,
 				8EC035BD18F2CF2D00946BA8 /* line.png in Resources */,
 				A016897F1B73F67B00E322CA /* museumtour.jpg in Resources */,
@@ -720,7 +720,7 @@
 				8E3B303918F3C62100DEC655 /* Arrow@2x.png in Resources */,
 				8EC035C218F2D7EE00946BA8 /* profileSubView.png in Resources */,
 				A016897D1B73F64000E322CA /* scuba.jpg in Resources */,
-				A0D024181B7A72BA002CB3BA /* halfmoonbay.jpeg in Resources */,
+				136B36CD1B7A7A6D001F7ECC /* coachella.png in Resources */,
 				8EEF9F9218F3F6610022E7BB /* Time-Icon.png in Resources */,
 				8EC035BB18F2CF2D00946BA8 /* Search-Icon.png in Resources */,
 				8EEF9F9018F3F6610022E7BB /* purchaseDetails.png in Resources */,
