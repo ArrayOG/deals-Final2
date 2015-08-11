@@ -165,7 +165,7 @@
      {
          [self performSelectorOnMainThread:@selector(socialLoginCampaignChanges:) withObject:content waitUntilDone:NO];
      }
-     ];
+    ];
     
     
 }
