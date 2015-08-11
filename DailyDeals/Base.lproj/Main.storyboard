@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fhf-Zy-iig">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fhf-Zy-iig">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -449,7 +449,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coachella.jpg" id="bUC-sp-jDZ">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coachella.png" id="bUC-sp-jDZ">
                                                             <rect key="frame" x="10" y="0.0" width="300" height="179"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -870,6 +870,28 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookflat.png" id="IUs-mY-JOY">
+                                        <rect key="frame" x="239" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterflat.png" id="C9I-rb-e5D">
+                                        <rect key="frame" x="271" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CVj-Pe-FxZ">
+                                        <rect key="frame" x="239" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UoW-WQ-Ugl">
+                                        <rect key="frame" x="271" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <view contentMode="scaleToFill" id="eBO-I3-PVm">
@@ -943,8 +965,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="7fa-AY-Mwk"/>
                     <connections>
+                        <outlet property="fbShare" destination="CVj-Pe-FxZ" id="4hJ-Vg-FfM"/>
                         <outlet property="scrollView" destination="tXo-8X-LXT" id="Zm0-1M-0Jz"/>
                         <outlet property="textView" destination="p5y-AQ-Zp3" id="K0e-Cj-u4V"/>
+                        <outlet property="twShare" destination="UoW-WQ-Ugl" id="uwj-oF-7u0"/>
                         <segue destination="IGW-5H-bBm" kind="push" identifier="detailsToMyPurchaseView" id="fcX-Zd-IxC"/>
                     </connections>
                 </viewController>
@@ -1017,10 +1041,11 @@
         <image name="btnSignOut.png" width="210" height="35"/>
         <image name="buttomBuyStrip.png" width="320" height="67"/>
         <image name="cellDivider.png" width="320" height="1"/>
-        <image name="coachella.jpg" width="1280" height="853"/>
+        <image name="coachella.png" width="1280" height="853"/>
         <image name="couponBackground.png" width="320" height="568"/>
         <image name="cross.png" width="16" height="16"/>
         <image name="detailWithLine.png" width="300" height="88"/>
+        <image name="facebookflat.png" width="64" height="64"/>
         <image name="hamburger.png" width="20" height="15"/>
         <image name="off.png" width="50" height="31"/>
         <image name="on.png" width="50" height="31"/>
@@ -1030,6 +1055,7 @@
         <image name="purchaseDetails.png" width="320" height="129"/>
         <image name="shadow.png" width="295" height="68"/>
         <image name="squarewithwhitebg.png" width="295" height="326"/>
+        <image name="twitterflat.png" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
