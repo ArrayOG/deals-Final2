@@ -54,7 +54,6 @@
     
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content) {
-        NSLog(content);
         self.inApp = [content componentsSeparatedByString: @";"];
         [self performSelectorOnMainThread:@selector(setContent) withObject:content waitUntilDone:NO];
         
