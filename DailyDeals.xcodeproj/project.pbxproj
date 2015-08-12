@@ -375,11 +375,11 @@
 		8EC0355E18F2872200946BA8 /* DailyDeals */ = {
 			isa = PBXGroup;
 			children = (
+				900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */,
 				900F8D0E1B7AA7BD0021FEF5 /* ADBMobile.h */,
 				900F8D0F1B7AA7C30021FEF5 /* ADBMobileConfig.json */,
 				900F8D111B7AA7C80021FEF5 /* AdobeMobileLibrary_Extension.a */,
 				900F8D131B7AA7CE0021FEF5 /* AdobeMobileLibrary.a */,
-				900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */,
 				900F8D011B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 */,
 				8EEF9FCF18F433360022E7BB /* ObjectClass */,
 				8EC0356718F2872200946BA8 /* AppDelegate.h */,

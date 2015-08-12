@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     [self welcomeMessageCampaign];
+    [self makeMboxConfirm];
     
     /* UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Daily Deals" message:@"Please take a moment to rate our app!" delegate:self cancelButtonTitle:@"Not now, remind me later" otherButtonTitles:nil];
     // optional - add more buttons:
