@@ -151,10 +151,10 @@
     {
         _btnTwitter.hidden = NO;
     }
-    else if ([content isEqualToString:@"no-social"])
+    else if ([content isEqualToString:@"both-social"])
     {
-        _btnFacebook.hidden = YES;
-        _btnTwitter.hidden = YES;
+        _btnFacebook.hidden = NO;
+        _btnTwitter.hidden = NO;
     }
     
 }
