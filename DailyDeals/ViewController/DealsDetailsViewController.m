@@ -86,8 +86,7 @@
 -(void)socialShareCampaignChanges: (NSString*)content
 {
     if ([content isEqualToString:@"tw"])
-    {
-        
+    {  
         _twShare.hidden = NO;
         
     }
