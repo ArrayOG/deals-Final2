@@ -95,6 +95,12 @@
         _fbShare.hidden = NO;
     }
     
+    else if ([content isEqualToString:@"both"])
+    {
+        _fbShare.hidden = NO;
+        _twShare.hidden = NO; 
+    }
+    
 }
 
 
