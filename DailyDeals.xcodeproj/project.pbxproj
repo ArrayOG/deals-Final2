@@ -110,10 +110,7 @@
 		8EEF9FCE18F42AD00022E7BB /* AppMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FCB18F42AD00022E7BB /* AppMenuCell.m */; };
 		8EEF9FD218F433360022E7BB /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FD118F433360022E7BB /* Container.m */; };
 		900443EE1B7A9B0700490EB4 /* dealsimagesfinal in Resources */ = {isa = PBXBuildFile; fileRef = 900443ED1B7A9B0700490EB4 /* dealsimagesfinal */; };
-		900443F01B7A9B1C00490EB4 /* coachella.png in Resources */ = {isa = PBXBuildFile; fileRef = 900443EF1B7A9B1C00490EB4 /* coachella.png */; };
 		900443F21B7A9B2000490EB4 /* facebookflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 900443F11B7A9B2000490EB4 /* facebookflat.png */; };
-		900443F41B7A9B2500490EB4 /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 900443F31B7A9B2500490EB4 /* halfmoonbay.jpeg */; };
-		900443F61B7A9B2A00490EB4 /* twitterflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 900443F51B7A9B2A00490EB4 /* twitterflat.png */; };
 		900F8D021B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 in Resources */ = {isa = PBXBuildFile; fileRef = 900F8D011B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 */; };
 		900F8D0D1B7AA7B30021FEF5 /* AdobeMobileLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */; };
 		900F8D101B7AA7C30021FEF5 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 900F8D0F1B7AA7C30021FEF5 /* ADBMobileConfig.json */; };
@@ -130,6 +127,7 @@
 		A0D024221B7BEC10002CB3BA /* dailydealogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024211B7BEC10002CB3BA /* dailydealogo.png */; };
 		A0D024241B7C3AD3002CB3BA /* coachella.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024231B7C3AD3002CB3BA /* coachella.png */; };
 		A0D024261B7C3ADF002CB3BA /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A0D024251B7C3ADF002CB3BA /* halfmoonbay.jpeg */; };
+		A0D024281B7C3CE3002CB3BA /* twitterflat.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024271B7C3CE3002CB3BA /* twitterflat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,10 +260,7 @@
 		8EEF9FD018F433360022E7BB /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		8EEF9FD118F433360022E7BB /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
 		900443ED1B7A9B0700490EB4 /* dealsimagesfinal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dealsimagesfinal; sourceTree = "<group>"; };
-		900443EF1B7A9B1C00490EB4 /* coachella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coachella.png; path = dealsimagesfinal/coachella.png; sourceTree = "<group>"; };
 		900443F11B7A9B2000490EB4 /* facebookflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookflat.png; path = dealsimagesfinal/facebookflat.png; sourceTree = "<group>"; };
-		900443F31B7A9B2500490EB4 /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = dealsimagesfinal/halfmoonbay.jpeg; sourceTree = "<group>"; };
-		900443F51B7A9B2A00490EB4 /* twitterflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterflat.png; path = dealsimagesfinal/twitterflat.png; sourceTree = "<group>"; };
 		900F8D011B7AA7790021FEF5 /* Deals iOS_iOS-4.5.4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Deals iOS_iOS-4.5.4"; sourceTree = "<group>"; };
 		900F8D0C1B7AA7B30021FEF5 /* AdobeMobileLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AdobeMobileLibrary; sourceTree = "<group>"; };
 		900F8D0E1B7AA7BD0021FEF5 /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBMobile.h; path = AdobeMobileLibrary/ADBMobile.h; sourceTree = "<group>"; };
@@ -283,6 +278,7 @@
 		A0D024211B7BEC10002CB3BA /* dailydealogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dailydealogo.png; path = ../../../dailydealogo.png; sourceTree = "<group>"; };
 		A0D024231B7C3AD3002CB3BA /* coachella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coachella.png; path = "../../../../Downloads/deals-Final2-master/DailyDeals/Images/DealsImages/coachella.png"; sourceTree = "<group>"; };
 		A0D024251B7C3ADF002CB3BA /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = "../../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/8E6809F9-B301-4801-B263-C16099522651/deals-Final2/DailyDeals/Images/DealsImages/halfmoonbay.jpeg"; sourceTree = "<group>"; };
+		A0D024271B7C3CE3002CB3BA /* twitterflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterflat.png; path = DailyDeals/dealsimagesfinal/twitterflat.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,10 +397,8 @@
 			isa = PBXGroup;
 			children = (
 				900443ED1B7A9B0700490EB4 /* dealsimagesfinal */,
-				900443EF1B7A9B1C00490EB4 /* coachella.png */,
 				900443F11B7A9B2000490EB4 /* facebookflat.png */,
-				900443F31B7A9B2500490EB4 /* halfmoonbay.jpeg */,
-				900443F51B7A9B2A00490EB4 /* twitterflat.png */,
+				A0D024271B7C3CE3002CB3BA /* twitterflat.png */,
 				8EEF9FC418F42A790022E7BB /* MenuView */,
 				8EC0358D18F2B2A800946BA8 /* Images */,
 				8EC0356018F2872200946BA8 /* DailyDeals-Info.plist */,
@@ -695,7 +689,6 @@
 				8EC0356C18F2872200946BA8 /* Main.storyboard in Resources */,
 				8EC0359B18F2B93100946BA8 /* Button-Log-in.png in Resources */,
 				8EEF9FA118F4025F0022E7BB /* purchaseButtom.png in Resources */,
-				900443F61B7A9B2A00490EB4 /* twitterflat.png in Resources */,
 				8EC035AE18F2CCD700946BA8 /* navBar.png in Resources */,
 				A016897B1B73F62000E322CA /* LobsterDinner.jpg in Resources */,
 				8E3B303A18F3C62100DEC655 /* boxWithGray.png in Resources */,
@@ -706,13 +699,13 @@
 				8EC035A918F2C33300946BA8 /* Icon-Password@2x.png in Resources */,
 				8EEF9F8A18F3F6610022E7BB /* backArrow.png in Resources */,
 				8EC035A118F2B93100946BA8 /* Icon-Twitter@2x.png in Resources */,
+				A0D024281B7C3CE3002CB3BA /* twitterflat.png in Resources */,
 				A0D024241B7C3AD3002CB3BA /* coachella.png in Resources */,
 				8E3B304718F3C62100DEC655 /* on@2x.png in Resources */,
 				A0D024221B7BEC10002CB3BA /* dailydealogo.png in Resources */,
 				8EEF9FA218F4025F0022E7BB /* purchaseButtom@2x.png in Resources */,
 				A01689791B73F5F000E322CA /* seattle.jpg in Resources */,
 				8E3B303E18F3C62100DEC655 /* btnEdit.png in Resources */,
-				900443F41B7A9B2500490EB4 /* halfmoonbay.jpeg in Resources */,
 				8EEF9F9F18F4025F0022E7BB /* cellDivider.png in Resources */,
 				8EEF9F8E18F3F6610022E7BB /* buttomBuyStrip.png in Resources */,
 				8E3B303C18F3C62100DEC655 /* boxWithRed.png in Resources */,
@@ -741,7 +734,6 @@
 				8EC035C218F2D7EE00946BA8 /* profileSubView.png in Resources */,
 				A016897D1B73F64000E322CA /* scuba.jpg in Resources */,
 				8EEF9F9218F3F6610022E7BB /* Time-Icon.png in Resources */,
-				900443F01B7A9B1C00490EB4 /* coachella.png in Resources */,
 				8EC035BB18F2CF2D00946BA8 /* Search-Icon.png in Resources */,
 				8EEF9F9018F3F6610022E7BB /* purchaseDetails.png in Resources */,
 				8EC035C318F2D7EE00946BA8 /* profileSubView@2x.png in Resources */,
