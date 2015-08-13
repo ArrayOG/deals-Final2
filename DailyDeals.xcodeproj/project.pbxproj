@@ -11,7 +11,6 @@
 		13EA0BBD1B728963002F99DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BBC1B728963002F99DD /* SystemConfiguration.framework */; };
 		13EA0BBF1B72896B002F99DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BBE1B72896B002F99DD /* CoreLocation.framework */; };
 		13EA0BC11B72897A002F99DD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EA0BC01B72897A002F99DD /* libz.dylib */; };
-		84E0E9AC1921180E001B388B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0E9AB1921180E001B388B /* Logo.png */; };
 		8E3B303818F3C62100DEC655 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B302818F3C62100DEC655 /* Arrow.png */; };
 		8E3B303918F3C62100DEC655 /* Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B302918F3C62100DEC655 /* Arrow@2x.png */; };
 		8E3B303A18F3C62100DEC655 /* boxWithGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B302A18F3C62100DEC655 /* boxWithGray.png */; };
@@ -128,6 +127,7 @@
 		A01689811B73F69000E322CA /* lasvegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689801B73F69000E322CA /* lasvegas.jpg */; };
 		A01689831B73F6A400E322CA /* niagrafalls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689821B73F6A400E322CA /* niagrafalls.jpg */; };
 		A0D024161B7A729E002CB3BA /* broadway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0D024151B7A729E002CB3BA /* broadway.jpg */; };
+		A0D024221B7BEC10002CB3BA /* dailydealogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024211B7BEC10002CB3BA /* dailydealogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +145,6 @@
 		13EA0BBC1B728963002F99DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		13EA0BBE1B72896B002F99DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		13EA0BC01B72897A002F99DD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		84E0E9AB1921180E001B388B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		8E3B302818F3C62100DEC655 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
 		8E3B302918F3C62100DEC655 /* Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@2x.png"; sourceTree = "<group>"; };
 		8E3B302A18F3C62100DEC655 /* boxWithGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boxWithGray.png; sourceTree = "<group>"; };
@@ -279,6 +278,7 @@
 		A01689801B73F69000E322CA /* lasvegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lasvegas.jpg; path = DealsImages/lasvegas.jpg; sourceTree = "<group>"; };
 		A01689821B73F6A400E322CA /* niagrafalls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = niagrafalls.jpg; path = DealsImages/niagrafalls.jpg; sourceTree = "<group>"; };
 		A0D024151B7A729E002CB3BA /* broadway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broadway.jpg; path = DealsImages/broadway.jpg; sourceTree = "<group>"; };
+		A0D024211B7BEC10002CB3BA /* dailydealogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dailydealogo.png; path = ../../../dailydealogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +451,7 @@
 				8EC035B318F2CF2D00946BA8 /* Search-Icon.png */,
 				8EC035B418F2CF2D00946BA8 /* price-rectangle.png */,
 				8EC035B518F2CF2D00946BA8 /* line.png */,
+				A0D024211B7BEC10002CB3BA /* dailydealogo.png */,
 				8EC035B618F2CF2D00946BA8 /* hamburger@2x.png */,
 				8EC035B718F2CF2D00946BA8 /* detailWithLine@2x.png */,
 				8EC035AC18F2CCD700946BA8 /* navBar.png */,
@@ -467,7 +468,6 @@
 				8EC0359818F2B93100946BA8 /* Icon-Twitter@2x.png */,
 				8EC0359918F2B93100946BA8 /* Button-Log-in@2x.png */,
 				8EC0359A18F2B93100946BA8 /* Button-Register@2x.png */,
-				84E0E9AB1921180E001B388B /* Logo.png */,
 				8EC0358F18F2B2A800946BA8 /* Logo@2x.png */,
 				8EC035C018F2D7EE00946BA8 /* profileSubView.png */,
 				8EC035C118F2D7EE00946BA8 /* profileSubView@2x.png */,
@@ -701,6 +701,7 @@
 				8EEF9F8A18F3F6610022E7BB /* backArrow.png in Resources */,
 				8EC035A118F2B93100946BA8 /* Icon-Twitter@2x.png in Resources */,
 				8E3B304718F3C62100DEC655 /* on@2x.png in Resources */,
+				A0D024221B7BEC10002CB3BA /* dailydealogo.png in Resources */,
 				8EEF9FA218F4025F0022E7BB /* purchaseButtom@2x.png in Resources */,
 				A01689791B73F5F000E322CA /* seattle.jpg in Resources */,
 				8E3B303E18F3C62100DEC655 /* btnEdit.png in Resources */,
@@ -737,7 +738,6 @@
 				8EEF9F9018F3F6610022E7BB /* purchaseDetails.png in Resources */,
 				8EC035C318F2D7EE00946BA8 /* profileSubView@2x.png in Resources */,
 				8E3B304118F3C62100DEC655 /* btnSignOut@2x.png in Resources */,
-				84E0E9AC1921180E001B388B /* Logo.png in Resources */,
 				8EEF9FB318F417CB0022E7BB /* couponBackground@2x.png in Resources */,
 				8E3B304218F3C62100DEC655 /* cross.png in Resources */,
 				8EC035BA18F2CF2D00946BA8 /* Search-Icon@2x.png in Resources */,

@@ -32,11 +32,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" id="GQq-6Z-gXV">
-                                        <rect key="frame" x="115" y="20" width="90" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GB7-fk-Xc4">
                                         <rect key="frame" x="48" y="155" width="225" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,6 +113,11 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dailydealogo.png" id="GQq-6Z-gXV">
+                                        <rect key="frame" x="93" y="-5" width="135" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                                    </imageView>
                                 </subviews>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
                                 <connections>
@@ -1019,7 +1019,6 @@
         <image name="Icon-Facebook.png" width="225" height="35"/>
         <image name="Icon-Password.png" width="225" height="35"/>
         <image name="Icon-Twitter.png" width="225" height="35"/>
-        <image name="Logo.png" width="90" height="120"/>
         <image name="Search-Icon.png" width="20" height="21"/>
         <image name="Time-Icon.png" width="12" height="12"/>
         <image name="_Group_-copy-3.png" width="300" height="180"/>
@@ -1035,6 +1034,7 @@
         <image name="coachella.png" width="1280" height="853"/>
         <image name="couponBackground.png" width="320" height="568"/>
         <image name="cross.png" width="16" height="16"/>
+        <image name="dailydealogo.png" width="360" height="440"/>
         <image name="detailWithLine.png" width="300" height="88"/>
         <image name="hamburger.png" width="20" height="15"/>
         <image name="off.png" width="50" height="31"/>
