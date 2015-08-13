@@ -124,10 +124,10 @@
 		A01689811B73F69000E322CA /* lasvegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689801B73F69000E322CA /* lasvegas.jpg */; };
 		A01689831B73F6A400E322CA /* niagrafalls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01689821B73F6A400E322CA /* niagrafalls.jpg */; };
 		A0D024161B7A729E002CB3BA /* broadway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0D024151B7A729E002CB3BA /* broadway.jpg */; };
-		A0D024221B7BEC10002CB3BA /* dailydealogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024211B7BEC10002CB3BA /* dailydealogo.png */; };
 		A0D024241B7C3AD3002CB3BA /* coachella.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024231B7C3AD3002CB3BA /* coachella.png */; };
 		A0D024261B7C3ADF002CB3BA /* halfmoonbay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A0D024251B7C3ADF002CB3BA /* halfmoonbay.jpeg */; };
 		A0D024281B7C3CE3002CB3BA /* twitterflat.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024271B7C3CE3002CB3BA /* twitterflat.png */; };
+		A0D0242A1B7C3FCD002CB3BA /* dailydealogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D024291B7C3FCD002CB3BA /* dailydealogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,10 +275,10 @@
 		A01689801B73F69000E322CA /* lasvegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lasvegas.jpg; path = DealsImages/lasvegas.jpg; sourceTree = "<group>"; };
 		A01689821B73F6A400E322CA /* niagrafalls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = niagrafalls.jpg; path = DealsImages/niagrafalls.jpg; sourceTree = "<group>"; };
 		A0D024151B7A729E002CB3BA /* broadway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broadway.jpg; path = DealsImages/broadway.jpg; sourceTree = "<group>"; };
-		A0D024211B7BEC10002CB3BA /* dailydealogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dailydealogo.png; path = ../../../dailydealogo.png; sourceTree = "<group>"; };
 		A0D024231B7C3AD3002CB3BA /* coachella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coachella.png; path = "../../../../Downloads/deals-Final2-master/DailyDeals/Images/DealsImages/coachella.png"; sourceTree = "<group>"; };
 		A0D024251B7C3ADF002CB3BA /* halfmoonbay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halfmoonbay.jpeg; path = "../../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/8E6809F9-B301-4801-B263-C16099522651/deals-Final2/DailyDeals/Images/DealsImages/halfmoonbay.jpeg"; sourceTree = "<group>"; };
 		A0D024271B7C3CE3002CB3BA /* twitterflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterflat.png; path = DailyDeals/dealsimagesfinal/twitterflat.png; sourceTree = SOURCE_ROOT; };
+		A0D024291B7C3FCD002CB3BA /* dailydealogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dailydealogo.png; path = DailyDeals/dailydealogo.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,8 +451,8 @@
 				8EC035B318F2CF2D00946BA8 /* Search-Icon.png */,
 				8EC035B418F2CF2D00946BA8 /* price-rectangle.png */,
 				8EC035B518F2CF2D00946BA8 /* line.png */,
-				A0D024211B7BEC10002CB3BA /* dailydealogo.png */,
 				8EC035B618F2CF2D00946BA8 /* hamburger@2x.png */,
+				A0D024291B7C3FCD002CB3BA /* dailydealogo.png */,
 				8EC035B718F2CF2D00946BA8 /* detailWithLine@2x.png */,
 				8EC035AC18F2CCD700946BA8 /* navBar.png */,
 				8EC035AD18F2CCD700946BA8 /* navBar@2x.png */,
@@ -702,7 +702,7 @@
 				A0D024281B7C3CE3002CB3BA /* twitterflat.png in Resources */,
 				A0D024241B7C3AD3002CB3BA /* coachella.png in Resources */,
 				8E3B304718F3C62100DEC655 /* on@2x.png in Resources */,
-				A0D024221B7BEC10002CB3BA /* dailydealogo.png in Resources */,
+				A0D0242A1B7C3FCD002CB3BA /* dailydealogo.png in Resources */,
 				8EEF9FA218F4025F0022E7BB /* purchaseButtom@2x.png in Resources */,
 				A01689791B73F5F000E322CA /* seattle.jpg in Resources */,
 				8E3B303E18F3C62100DEC655 /* btnEdit.png in Resources */,
