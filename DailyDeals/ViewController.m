@@ -129,7 +129,6 @@
 -(void)welcomeMessageCampaign
 {
     [ADBMobile targetClearCookies];
-    
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"welcome-message" defaultContent:@"You'll always find the best deals, guaranteed!" parameters:nil];
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content)
